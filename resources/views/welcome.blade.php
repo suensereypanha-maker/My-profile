@@ -316,7 +316,7 @@
                     </h2>
                     <ul class="space-y-3 text-xs">
                         <li class="flex items-center gap-3"><i class="fa-solid fa-user text-galaxyGreen w-4"></i> <span class="text-gray-400">Panha</span></li>
-                        <li class="flex items-center gap-3"><i class="fa-solid fa-envelope text-galaxyGreen w-4"></i> <span class="text-gray-400">panha.dev@gmail.com</span></li>
+                        <li class="flex items-center gap-3"><i class="fa-solid fa-envelope text-galaxyGreen w-4"></i> <span class="text-gray-400">suensereypanha@gmail.com</span></li>
                         <li class="flex items-center gap-3"><i class="fa-solid fa-location-dot text-galaxyGreen w-4"></i> <span class="text-gray-400">Phnom Penh, Cambodia (GMT+7)</span></li>
                         <li class="flex items-center gap-3"><i class="fa-solid fa-phone text-galaxyGreen w-4"></i> <span class="text-gray-400">+855 10 870 101</span></li>
                     </ul>
@@ -914,7 +914,7 @@
         </a>
 
         <!-- Email Floating Button -->
-        <a href="mailto:panha.dev@gmail.com" class="group relative flex items-center justify-center w-12 h-12 bg-nebulaDark/90 border border-galaxyGreen/40 hover:border-galaxyGreen rounded-full text-galaxyGreen text-xl shadow-neon-green hover:shadow-[0_0_15px_#00FF66] hover:scale-110 transition-all duration-300">
+        <a href="mailto:suensereypanha@gmail.com" class="group relative flex items-center justify-center w-12 h-12 bg-nebulaDark/90 border border-galaxyGreen/40 hover:border-galaxyGreen rounded-full text-galaxyGreen text-xl shadow-neon-green hover:shadow-[0_0_15px_#00FF66] hover:scale-110 transition-all duration-300">
             <i class="fa-solid fa-envelope group-hover:rotate-12 transition-transform"></i>
             <!-- Tooltip -->
             <span class="absolute right-14 px-2.5 py-1 bg-spaceBlack/95 border border-galaxyGreen/30 text-galaxyGreen text-[10px] font-mono tracking-wider rounded opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none whitespace-nowrap shadow-neon-green">
