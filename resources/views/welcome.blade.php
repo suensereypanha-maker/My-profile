@@ -918,7 +918,7 @@
             <i class="fa-solid fa-envelope group-hover:rotate-12 transition-transform"></i>
             <!-- Tooltip -->
             <span class="absolute right-14 px-2.5 py-1 bg-spaceBlack/95 border border-galaxyGreen/30 text-galaxyGreen text-[10px] font-mono tracking-wider rounded opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none whitespace-nowrap shadow-neon-green">
-                EMAIL // SECURE
+                EMAIL // suensereypanha@gmail.com
             </span>
         </a>
     </div>
