@@ -318,7 +318,7 @@
                         <li class="flex items-center gap-3"><i class="fa-solid fa-user text-galaxyGreen w-4"></i> <span class="text-gray-400">Panha</span></li>
                         <li class="flex items-center gap-3"><i class="fa-solid fa-envelope text-galaxyGreen w-4"></i> <span class="text-gray-400">suensereypanha@gmail.com</span></li>
                         <li class="flex items-center gap-3"><i class="fa-solid fa-location-dot text-galaxyGreen w-4"></i> <span class="text-gray-400">Phnom Penh, Cambodia (GMT+7)</span></li>
-                        <li class="flex items-center gap-3"><i class="fa-solid fa-phone text-galaxyGreen w-4"></i> <span class="text-gray-400">+855 10 870 101</span></li>
+                        <li class="flex items-center gap-3"><i class="fa-solid fa-phone text-galaxyGreen w-4"></i> <span class="text-gray-400">+855 85 297 773</span></li>
                     </ul>
                     <div class="grid grid-cols-2 gap-2 mt-4 pt-3 border-t border-galaxyGreen/10">
                         <a href="#" class="flex items-center justify-center gap-2 py-1.5 bg-spaceBlack border border-galaxyGreen/20 rounded text-[11px] text-gray-400 hover:text-galaxyGreen hover:border-galaxyGreen transition-all"><i class="fa-brands fa-github"></i> GitHub</a>
@@ -373,7 +373,7 @@
                     <h2 class="text-sm font-bold text-white tracking-widest uppercase mb-4 flex items-center gap-2 border-b border-galaxyGreen/10 pb-2">
                         <i class="fa-solid fa-file-invoice text-galaxyGreen"></i> OFFICE APPLICATIONS
                     </h2>
-                    
+
                     <div class="space-y-3.5">
                         <div>
                             <div class="flex justify-between text-xs mb-1">
@@ -453,10 +453,16 @@
                 @php
                 $educations = [
                 [
+                'period' => '2024 – 2026',
+                'school' => 'BELTEI International University',
+                'desc' => 'Bachelor of Information Technology Engineering',
+                'active' => true
+                ],
+                [
                 'period' => '2021 – 2024',
                 'school' => 'Net Yang High School',
                 'desc' => 'High School',
-                'active' => true
+                'active' => false
                 ],
                 [
                 'period' => '2019 – 2021',
@@ -520,7 +526,7 @@
                 @php
                 $trainings = [
                 [
-                'date' => 'Dec 25, 2025',
+                'date' => 'Dec 25, 2024',
                 'title' => 'BELTEI International University',
                 'detail' => 'Faculty of Information Technology and Science',
                 'active' => true
@@ -591,6 +597,92 @@
                         </div>
                     </section>
 
+                    <!-- NEW SCHOOL WORK ASSIGNMENTS PANEL (ACADEMIC PROJECTS) -->
+                    <section class="border border-galaxyGreen/20 bg-nebulaDark/60 backdrop-blur-md rounded-2xl p-5 shadow-neon-green relative overflow-hidden group">
+                        <div class="absolute -right-10 -top-10 w-28 h-28 bg-premiumGold/5 rounded-full blur-xl group-hover:bg-premiumGold/10 transition-all duration-500"></div>
+                        <h2 class="text-sm font-bold text-white tracking-widest uppercase mb-5 flex items-center gap-2 border-b border-galaxyGreen/10 pb-2">
+                            <i class="fa-solid fa-flask text-galaxyGreen"></i> SCHOOL PROJECTS
+                        </h2>
+
+                        <div class="grid grid-cols-1 gap-4">
+                            <!-- Project Card 1 -->
+                            <div class="p-4 bg-spaceBlack/60 border border-galaxyGreen/20 rounded-xl hover:border-galaxyGreen hover:shadow-neon-green transition-all group/card relative overflow-hidden">
+                                <div class="absolute inset-0 bg-gradient-to-r from-galaxyGreen/0 via-galaxyGreen/5 to-galaxyGreen/0 opacity-0 group-hover/card:opacity-100 transition-opacity translate-x-[-100%] group-hover/card:translate-x-[100%] duration-1000"></div>
+                                <div class="flex justify-between items-start mb-2">
+                                    <h4 class="text-xs font-bold text-white group-hover/card:text-galaxyGreen flex items-center gap-2">
+                                        <i class="fa-solid fa-database text-[10px]"></i> Database Architecture
+                                    </h4>
+                                    <span class="text-[9px] text-premiumGold font-mono border border-premiumGold/30 px-1.5 py-0.5 rounded bg-premiumGold/10">A+ GRADE</span>
+                                </div>
+                                <p class="text-[10px] text-gray-500 mb-3">Designed normalized schemas and ER diagrams for a distributed university library system.</p>
+                                <div class="flex gap-2 relative z-10">
+                                    <a href="#" class="text-[9px] font-mono text-gray-400 hover:text-white bg-spaceBlack border border-gray-700 hover:border-galaxyGreen px-2 py-1 rounded transition-colors"><i class="fa-brands fa-github"></i> Repository</a>
+                                    <a href="#" class="text-[9px] font-mono text-gray-400 hover:text-white bg-spaceBlack border border-gray-700 hover:border-galaxyGreen px-2 py-1 rounded transition-colors"><i class="fa-solid fa-file-pdf"></i> Report</a>
+                                </div>
+                            </div>
+
+                            <!-- Project Card 2 -->
+                            <div class="p-4 bg-spaceBlack/60 border border-galaxyGreen/20 rounded-xl hover:border-galaxyGreen hover:shadow-neon-green transition-all group/card relative overflow-hidden">
+                                <div class="absolute inset-0 bg-gradient-to-r from-galaxyGreen/0 via-galaxyGreen/5 to-galaxyGreen/0 opacity-0 group-hover/card:opacity-100 transition-opacity translate-x-[-100%] group-hover/card:translate-x-[100%] duration-1000"></div>
+                                <div class="flex justify-between items-start mb-2">
+                                    <h4 class="text-xs font-bold text-white group-hover/card:text-galaxyGreen flex items-center gap-2">
+                                        <i class="fa-solid fa-code text-[10px]"></i> E-Commerce Frontend
+                                    </h4>
+                                    <span class="text-[9px] text-galaxyGreen font-mono border border-galaxyGreen/30 px-1.5 py-0.5 rounded bg-galaxyGreen/10">COMPLETED</span>
+                                </div>
+                                <p class="text-[10px] text-gray-500 mb-3">Responsive web application built with modern JS frameworks and Tailwind CSS.</p>
+                                <div class="flex gap-2 relative z-10">
+                                    <a href="#" class="text-[9px] font-mono text-gray-400 hover:text-white bg-spaceBlack border border-gray-700 hover:border-galaxyGreen px-2 py-1 rounded transition-colors"><i class="fa-brands fa-github"></i> Repository</a>
+                                    <a href="#" class="text-[9px] font-mono text-gray-400 hover:text-white bg-spaceBlack border border-gray-700 hover:border-galaxyGreen px-2 py-1 rounded transition-colors"><i class="fa-solid fa-link"></i> Live Demo</a>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- NEW WORK EXPERIENCE PANEL (PROFESSIONAL EXPERIENCE) -->
+                    <section class="border border-galaxyGreen/20 bg-nebulaDark/60 backdrop-blur-md rounded-2xl p-5 shadow-neon-green relative overflow-hidden group">
+                        <div class="absolute -left-10 -bottom-10 w-28 h-28 bg-galaxyGreen/5 rounded-full blur-xl group-hover:bg-galaxyGreen/10 transition-all duration-500"></div>
+                        <h2 class="text-sm font-bold text-white tracking-widest uppercase mb-5 flex items-center gap-2 border-b border-galaxyGreen/10 pb-2">
+                            <i class="fa-solid fa-briefcase text-galaxyGreen animate-pulse"></i> PROFESSIONAL EXPERIENCE
+                        </h2>
+
+                        <div class="space-y-5 relative before:absolute before:left-2 before:top-2 before:bottom-2 before:w-[1px] before:bg-gradient-to-b before:from-galaxyGreen before:via-galaxyGreen/30 before:to-transparent">
+                            <!-- Experience Item 1 -->
+                            <div class="relative pl-7 group/item">
+                                <span class="absolute left-0 top-1 w-4 h-4 rounded-full bg-spaceBlack border border-galaxyGreen flex items-center justify-center shadow-[0_0_8px_#00FF66] group-hover/item:scale-110 transition-transform">
+                                    <span class="w-1.5 h-1.5 bg-galaxyGreen rounded-full animate-ping"></span>
+                                </span>
+                                <div class="flex justify-between items-start mb-1">
+                                    <div>
+                                        <h4 class="text-sm font-bold text-white group-hover/item:text-galaxyGreen transition-colors">Software Engineer</h4>
+                                        <p class="text-[10px] text-gray-400 font-mono">Tech Innovations Inc.</p>
+                                    </div>
+                                    <span class="px-2 py-0.5 bg-galaxyGreen/10 border border-galaxyGreen/30 text-galaxyGreen text-[9px] font-bold rounded font-mono">2024 - PRESENT</span>
+                                </div>
+                                <p class="text-[11px] text-gray-500 mt-2 leading-relaxed">
+                                    Developing high-performance web applications, integrating AI tools, and optimizing database clusters.
+                                </p>
+                            </div>
+
+                            <!-- Experience Item 2 -->
+                            <div class="relative pl-7 group/item">
+                                <span class="absolute left-0 top-1 w-4 h-4 rounded-full bg-spaceBlack border border-galaxyGreen/40 flex items-center justify-center group-hover/item:border-galaxyGreen transition-colors">
+                                    <span class="w-1.5 h-1.5 bg-galaxyGreen/40 rounded-full group-hover/item:bg-galaxyGreen transition-colors"></span>
+                                </span>
+                                <div class="flex justify-between items-start mb-1">
+                                    <div>
+                                        <h4 class="text-sm font-bold text-gray-300 group-hover/item:text-white transition-colors">Frontend Developer</h4>
+                                        <p class="text-[10px] text-gray-400 font-mono">Creative Digital Agency</p>
+                                    </div>
+                                    <span class="px-2 py-0.5 bg-spaceBlack border border-gray-700 text-gray-500 text-[9px] font-bold rounded font-mono">2022 - 2024</span>
+                                </div>
+                                <p class="text-[11px] text-gray-500 mt-2 leading-relaxed">
+                                    Built responsive interfaces using Vue.js and Tailwind CSS. Implemented complex animations and state management.
+                                </p>
+                            </div>
+                        </div>
+                    </section>
+
                     <!-- COLUMN 2: LANGUAGES & CONTINUING LEARNING -->
                     <div class="flex flex-col gap-6">
                         <!-- 5. HUMAN LANGUAGES PANEL -->
@@ -657,7 +749,6 @@
                         </section>
                     </div>
                 </div>
-
                 <!-- 6. PROGRAMMING LANGUAGES PANEL -->
                 @php
                 $skills = [
