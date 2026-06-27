@@ -318,7 +318,7 @@
                         <li class="flex items-center gap-3"><i class="fa-solid fa-user text-galaxyGreen w-4"></i> <span class="text-gray-400">Panha</span></li>
                         <li class="flex items-center gap-3"><i class="fa-solid fa-envelope text-galaxyGreen w-4"></i> <span class="text-gray-400">suensereypanha@gmail.com</span></li>
                         <li class="flex items-center gap-3"><i class="fa-solid fa-location-dot text-galaxyGreen w-4"></i> <span class="text-gray-400">Phnom Penh, Cambodia (GMT+7)</span></li>
-                        <li class="flex items-center gap-3"><i class="fa-solid fa-phone text-galaxyGreen w-4"></i> <span class="text-gray-400">+855 10 870 101</span></li>
+                        <li class="flex items-center gap-3"><i class="fa-solid fa-phone text-galaxyGreen w-4"></i> <span class="text-gray-400">+855 85 297 773</span></li>
                     </ul>
                     <div class="grid grid-cols-2 gap-2 mt-4 pt-3 border-t border-galaxyGreen/10">
                         <a href="#" class="flex items-center justify-center gap-2 py-1.5 bg-spaceBlack border border-galaxyGreen/20 rounded text-[11px] text-gray-400 hover:text-galaxyGreen hover:border-galaxyGreen transition-all"><i class="fa-brands fa-github"></i> GitHub</a>
@@ -373,7 +373,7 @@
                     <h2 class="text-sm font-bold text-white tracking-widest uppercase mb-4 flex items-center gap-2 border-b border-galaxyGreen/10 pb-2">
                         <i class="fa-solid fa-file-invoice text-galaxyGreen"></i> OFFICE APPLICATIONS
                     </h2>
-                    
+
                     <div class="space-y-3.5">
                         <div>
                             <div class="flex justify-between text-xs mb-1">
@@ -453,10 +453,16 @@
                 @php
                 $educations = [
                 [
+                'period' => '2024 – 2026',
+                'school' => 'BELTEI International University',
+                'desc' => 'Bachelor of Information Technology Engineering',
+                'active' => true
+                ],
+                [
                 'period' => '2021 – 2024',
                 'school' => 'Net Yang High School',
                 'desc' => 'High School',
-                'active' => true
+                'active' => false
                 ],
                 [
                 'period' => '2019 – 2021',
@@ -520,7 +526,7 @@
                 @php
                 $trainings = [
                 [
-                'date' => 'Dec 25, 2025',
+                'date' => 'Dec 25, 2024',
                 'title' => 'BELTEI International University',
                 'detail' => 'Faculty of Information Technology and Science',
                 'active' => true
@@ -586,6 +592,106 @@
                                 <span class="text-[10px] {{ $training['active'] ? 'text-galaxyGreen font-bold' : 'text-gray-500' }} font-mono">{{ $training['date'] }}</span>
                                 <h4 class="text-xs font-bold {{ $training['active'] ? 'text-white' : 'text-gray-400' }}">{{ $training['title'] }}</h4>
                                 <p class="text-[10px] {{ $training['active'] ? 'text-gray-500' : 'text-gray-600' }}">{{ $training['detail'] }}</p>
+                            </div>
+                            @endforeach
+                        </div>
+                    </section>
+
+                    <!-- 4. SCHOOL WORK ASSIGN EXPERIENCE PANEL -->
+                    <section class="border border-galaxyGreen/20 bg-nebulaDark/60 backdrop-blur-md rounded-2xl p-5 shadow-neon-green">
+                        <h2 class="text-sm font-bold text-white tracking-widest uppercase mb-4 flex items-center gap-2 border-b border-galaxyGreen/10 pb-2">
+                            <i class="fa-solid fa-book-open text-galaxyGreen"></i> SCHOOL WORK ASSIGNMENTS
+                        </h2>
+                        @php
+                        $schoolWorks = [
+                        [
+                        'date' => 'Jan 2025',
+                        'title' => 'Database Design Project',
+                        'detail' => 'Designed ER diagram and normalized tables for university library system.',
+                        'url' => 'https://github.com/yourusername/database-design-project',
+                        'active' => true,
+                        'projects' => [
+                        [
+                        'title' => 'SQL Schema Repo',
+                        'url' => 'https://github.com/yourusername/sql-schema',
+                        ],
+                        [
+                        'title' => 'ER Diagram',
+                        'url' => 'https://github.com/yourusername/er-diagram',
+                        ],
+                        ],
+                        ],
+                        [
+                        'date' => 'May 2024',
+                        'title' => 'Web Development Assignment',
+                        'detail' => 'Built a responsive e‑commerce frontend using Tailwind CSS.',
+                        'url' => 'https://github.com/yourusername/web-development-assignment',
+                        'active' => false,
+                        'projects' => [
+                        [
+                        'title' => 'Tailwind Shop Demo',
+                        'url' => 'https://github.com/yourusername/tailwind-shop-demo',
+                        ],
+                        ],
+                        ],
+                        ];
+                        @endphp
+                        <div class="space-y-4 relative before:absolute before:left-2 before:top-2 before:bottom-2 before:w-[1px] before:bg-galaxyGreen/20">
+                            @foreach ($schoolWorks as $work)
+                            <div class="relative pl-6">
+                                <span class="absolute left-0.5 top-1.5 w-3 h-3 rounded-full {{ $work['active'] ? 'bg-galaxyGreen shadow-[0_0_8px_#00FF66]' : 'bg-galaxyGreen/40' }}"></span>
+                                <span class="text-[10px] {{ $work['active'] ? 'text-galaxyGreen font-bold' : 'text-gray-500' }} font-mono">{{ $work['date'] }}</span>
+                                <div class="flex items-center space-x-2">
+                                    <h4 class="text-xs font-bold {{ $work['active'] ? 'text-white' : 'text-gray-400' }}">{{ $work['title'] }}</h4>
+                                    @if (!empty($work['url']))
+                                    <a href="{{ $work['url'] }}" target="_blank" class="text-galaxyGreen hover:text-premiumGold transition-colors" title="View on GitHub"><i class="fa-brands fa-github"></i></a>
+                                    @endif
+                                </div>
+                                @isset($work['projects'])
+                                <div class="flex flex-col space-y-1 mt-1">
+                                    @foreach ($work['projects'] as $proj)
+                                    <a href="{{ $proj['url'] }}" target="_blank" class="text-galaxyGreen hover:text-premiumGold flex items-center space-x-1 text-xs" title="{{ $proj['title'] }}">
+                                        <i class="fa-brands fa-github"></i> <span>{{ $proj['title'] }}</span>
+                                    </a>
+                                    @endforeach
+                                </div>
+                                @endisset
+                                <p class="text-[10px] {{ $work['active'] ? 'text-gray-500' : 'text-gray-600' }}">{{ $work['detail'] }}</p>
+                            </div>
+                            @endforeach
+                        </div>
+                    </section>
+
+                    <!-- 5. WORK EXPERIENCE PANEL -->
+                    <section class="border border-galaxyGreen/20 bg-nebulaDark/60 backdrop-blur-md rounded-2xl p-5 shadow-neon-green">
+                        <h2 class="text-sm font-bold text-white tracking-widest uppercase mb-4 flex items-center gap-2 border-b border-galaxyGreen/10 pb-2">
+                            <i class="fa-solid fa-briefcase text-galaxyGreen"></i> WORK EXPERIENCE
+                        </h2>
+                        @php
+                        $workExperiences = [
+                        [
+                        'period' => '2023 – 2024',
+                        'company' => 'Tech Solutions Ltd.',
+                        'role' => 'Junior Web Developer',
+                        'detail' => 'Developed and maintained client websites using Laravel and Vue.js.',
+                        'active' => true
+                        ],
+                        [
+                        'period' => '2022 – 2023',
+                        'company' => 'Innovate Labs',
+                        'role' => 'Intern Software Engineer',
+                        'detail' => 'Assisted in building internal tools with Python and Docker.',
+                        'active' => false
+                        ],
+                        ];
+                        @endphp
+                        <div class="space-y-4 relative before:absolute before:left-2 before:top-2 before:bottom-2 before:w-[1px] before:bg-galaxyGreen/20">
+                            @foreach ($workExperiences as $exp)
+                            <div class="relative pl-6">
+                                <span class="absolute left-0.5 top-1.5 w-3 h-3 rounded-full {{ $exp['active'] ? 'bg-galaxyGreen shadow-[0_0_8px_#00FF66]' : 'bg-galaxyGreen/40' }}"></span>
+                                <span class="text-[10px] {{ $exp['active'] ? 'text-galaxyGreen font-bold' : 'text-gray-500' }} font-mono">{{ $exp['period'] }}</span>
+                                <h4 class="text-xs font-bold {{ $exp['active'] ? 'text-white' : 'text-gray-400' }}">{{ $exp['company'] }} – {{ $exp['role'] }}</h4>
+                                <p class="text-[10px] {{ $exp['active'] ? 'text-gray-500' : 'text-gray-600' }}">{{ $exp['detail'] }}</p>
                             </div>
                             @endforeach
                         </div>
@@ -657,7 +763,6 @@
                         </section>
                     </div>
                 </div>
-
                 <!-- 6. PROGRAMMING LANGUAGES PANEL -->
                 @php
                 $skills = [
