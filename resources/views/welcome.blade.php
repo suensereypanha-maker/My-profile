@@ -778,7 +778,7 @@
                                         <p class="text-[10px] {{ $exp['active'] ? 'text-gray-500' : 'text-gray-600' }}">{{ $exp['detail'] }}</p>
                                     </div>
                                     @endforeach
-                                    >>>>>>> 5ff6ca39a1048f5e3b214d890ccb2db64418d5a2
+
                                 </div>
                             </section>
 
