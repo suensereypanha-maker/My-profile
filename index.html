@@ -33,7 +33,7 @@
         }
     </script>
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;700&display=swap');
+        @import  url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;700&display=swap');
 
         body {
             font-family: 'Fira Code', monospace;
@@ -54,7 +54,7 @@
         }
 
         /* Cybernetic Rotating Portal Keyframes */
-        @keyframes spin-clockwise {
+        @keyframes  spin-clockwise {
             0% {
                 transform: rotate(0deg);
             }
@@ -64,7 +64,7 @@
             }
         }
 
-        @keyframes spin-counterclockwise {
+        @keyframes  spin-counterclockwise {
             0% {
                 transform: rotate(360deg);
             }
@@ -74,7 +74,7 @@
             }
         }
 
-        @keyframes pulse-glow {
+        @keyframes  pulse-glow {
 
             0%,
             100% {
@@ -88,7 +88,7 @@
             }
         }
 
-        @keyframes radar-ripple {
+        @keyframes  radar-ripple {
             0% {
                 transform: scale(0.95);
                 opacity: 0.8;
@@ -125,7 +125,7 @@
         }
 
         /* Typewriter Animation */
-        @keyframes typing {
+        @keyframes  typing {
             0% {
                 width: 0;
                 animation-timing-function: steps(22, end);
@@ -146,7 +146,7 @@
             }
         }
 
-        @keyframes blink-caret {
+        @keyframes  blink-caret {
 
             from,
             to {
@@ -172,7 +172,7 @@
             vertical-align: bottom;
         }
 
-        @keyframes typing-ai {
+        @keyframes  typing-ai {
             0% {
                 width: 0;
                 animation-timing-function: steps(25, end);
@@ -296,7 +296,7 @@
                             <div class="absolute top-0 left-0 w-full h-[2px] bg-galaxyGreen shadow-[0_0_10px_#00FF66] opacity-70 animate-[bounce_3s_infinite] z-20"></div>
 
                             <!-- Profile Image -->
-                            <img src="{{ asset('profile.png') }}" class="w-full h-full object-cover rounded-full" alt="Profile Picture">
+                            <img src="profile.png" class="w-full h-full object-cover rounded-full" alt="Profile Picture">
                         </div>
                     </div>
 
@@ -307,7 +307,7 @@
                         <div class="inline-flex items-center gap-2 px-4 py-1.5 bg-premiumGold/20 border border-premiumGold text-premiumGold text-xs font-bold rounded-lg uppercase w-full justify-center">
                             <i class="fa-solid fa-crown"></i> Premium Member
                         </div>
-                        <a href="{{ asset('SUEN_SEREYPANHA_CV.pdf') }}" download class="inline-flex items-center gap-2 px-4 py-1.5 bg-galaxyGreen/10 border border-galaxyGreen/40 hover:border-galaxyGreen text-galaxyGreen text-xs font-bold rounded-lg uppercase w-full justify-center hover:bg-galaxyGreen hover:text-black transition-all shadow-[0_0_10px_rgba(0,255,102,0.1)] hover:shadow-[0_0_15px_rgba(0,255,102,0.4)]">
+                        <a href="SUEN_SEREYPANHA_CV.pdf" download class="inline-flex items-center gap-2 px-4 py-1.5 bg-galaxyGreen/10 border border-galaxyGreen/40 hover:border-galaxyGreen text-galaxyGreen text-xs font-bold rounded-lg uppercase w-full justify-center hover:bg-galaxyGreen hover:text-black transition-all shadow-[0_0_10px_rgba(0,255,102,0.1)] hover:shadow-[0_0_15px_rgba(0,255,102,0.4)]">
                             <i class="fa-solid fa-file-arrow-down"></i> Download CV
                         </a>
                     </div>
@@ -454,35 +454,7 @@
                     </div>
                 </section>
 
-                @php
-                $educations = [
-                [
-                'period' => '2024 – 2026',
-                'school' => 'BELTEI International University',
-                'desc' => 'Bachelor of Information Technology Engineering',
-                'active' => true
-                ],
-                [
-                'period' => '2021 – 2024',
-                'school' => 'Net Yang High School',
-                'desc' => 'High School',
-                'active' => false
-                ],
-                [
-                'period' => '2019 – 2021',
-                'school' => 'Wattamim Secondary School',
-                'desc' => 'Secondary School',
-                'active' => false
-                ],
-                [
-                'period' => '2013 – 2019',
-                'school' => "Along l've Primary School",
-                'desc' => 'Primary School',
-                'active' => false
-                ]
-                ];
-                @endphp
-
+                
                 <!-- TOP ROW: EDUCATION & PROJECT LINKS -->
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
 
@@ -492,15 +464,31 @@
                             <i class="fa-solid fa-graduation-cap text-galaxyGreen"></i> EDUCATION BACKGROUND
                         </h2>
                         <div class="space-y-4 relative before:absolute before:left-2 before:top-2 before:bottom-2 before:w-[1px] before:bg-galaxyGreen/20">
-                            @foreach ($educations as $edu)
-                            <div class="relative pl-6">
-                                <span class="absolute left-0.5 top-1.5 w-3 h-3 rounded-full {{ $edu['active'] ? 'bg-galaxyGreen shadow-[0_0_8px_#00FF66]' : 'bg-galaxyGreen/40' }}"></span>
-                                <span class="text-[10px] {{ $edu['active'] ? 'text-galaxyGreen font-bold' : 'text-gray-500' }} font-mono">{{ $edu['period'] }}</span>
-                                <h4 class="text-xs font-bold {{ $edu['active'] ? 'text-white' : 'text-gray-400' }}">{{ $edu['school'] }}</h4>
-                                <p class="text-[10px] {{ $edu['active'] ? 'text-gray-500' : 'text-gray-600' }}">{{ $edu['desc'] }}</p>
+                                                        <div class="relative pl-6">
+                                <span class="absolute left-0.5 top-1.5 w-3 h-3 rounded-full bg-galaxyGreen shadow-[0_0_8px_#00FF66]"></span>
+                                <span class="text-[10px] text-galaxyGreen font-bold font-mono">2024 – 2026</span>
+                                <h4 class="text-xs font-bold text-white">BELTEI International University</h4>
+                                <p class="text-[10px] text-gray-500">Bachelor of Information Technology Engineering</p>
                             </div>
-                            @endforeach
-                        </div>
+                                                        <div class="relative pl-6">
+                                <span class="absolute left-0.5 top-1.5 w-3 h-3 rounded-full bg-galaxyGreen/40"></span>
+                                <span class="text-[10px] text-gray-500 font-mono">2021 – 2024</span>
+                                <h4 class="text-xs font-bold text-gray-400">Net Yang High School</h4>
+                                <p class="text-[10px] text-gray-600">High School</p>
+                            </div>
+                                                        <div class="relative pl-6">
+                                <span class="absolute left-0.5 top-1.5 w-3 h-3 rounded-full bg-galaxyGreen/40"></span>
+                                <span class="text-[10px] text-gray-500 font-mono">2019 – 2021</span>
+                                <h4 class="text-xs font-bold text-gray-400">Wattamim Secondary School</h4>
+                                <p class="text-[10px] text-gray-600">Secondary School</p>
+                            </div>
+                                                        <div class="relative pl-6">
+                                <span class="absolute left-0.5 top-1.5 w-3 h-3 rounded-full bg-galaxyGreen/40"></span>
+                                <span class="text-[10px] text-gray-500 font-mono">2013 – 2019</span>
+                                <h4 class="text-xs font-bold text-gray-400">Along l&#039;ve Primary School</h4>
+                                <p class="text-[10px] text-gray-600">Primary School</p>
+                            </div>
+                                                    </div>
                     </section>
 
                     <!-- 3. PROJECT LINKS PANEL -->
@@ -527,62 +515,7 @@
                     </section>
                 </div>
 
-                @php
-                $trainings = [
-                [
-                'date' => 'Dec 25, 2024',
-                'title' => 'BELTEI International University',
-                'detail' => 'Faculty of Information Technology and Science',
-                'active' => true
-                ],
-                [
-                'date' => 'Dec 19, 2024',
-                'title' => 'Master – IT Professional Skill Training',
-                'detail' => 'Skill: Computer program for job',
-                'active' => false
-                ],
-                [
-                'date' => 'Dec 06, 2022',
-                'title' => 'Master – IT Professional Skill Training',
-                'detail' => 'Skill: Computer Basic for Administration (Typing, MS Windows, Word, PowerPoint, Excel 2019)',
-                'active' => false
-                ],
-                [
-                'date' => 'Jun 26, 2021',
-                'title' => 'Master – IT Professional Skill Training',
-                'detail' => 'Skill: Web Developer',
-                'active' => false
-                ],
-                [
-                'date' => 'Jun 26, 2021',
-                'title' => 'Robotic STEM Study',
-                'detail' => 'Arduino, Robot Car, LED Control',
-                'active' => false
-                ]
-                ];
-
-                $humanLanguages = [
-                [
-                'name' => 'Khmer',
-                'proficiency' => 'NATIVE',
-                'percentage' => 100,
-                'active' => true
-                ],
-                [
-                'name' => 'English',
-                'proficiency' => 'FLUENT',
-                'percentage' => 80,
-                'active' => true
-                ],
-                [
-                'name' => 'Chinese',
-                'proficiency' => 'BASIC',
-                'percentage' => 35,
-                'active' => false
-                ]
-                ];
-                @endphp
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
 
                     <!-- 4. TRAINING COURSE PANEL -->
                     <section class="border border-galaxyGreen/20 bg-nebulaDark/60 backdrop-blur-md rounded-2xl p-5 shadow-neon-green">
@@ -590,15 +523,37 @@
                             <i class="fa-solid fa-chalkboard-user text-galaxyGreen"></i> TRAINING COURSES
                         </h2>
                         <div class="space-y-4 relative before:absolute before:left-2 before:top-2 before:bottom-2 before:w-[1px] before:bg-galaxyGreen/20">
-                            @foreach ($trainings as $training)
-                            <div class="relative pl-6">
-                                <span class="absolute left-0.5 top-1.5 w-3 h-3 rounded-full {{ $training['active'] ? 'bg-galaxyGreen shadow-[0_0_8px_#00FF66]' : 'bg-galaxyGreen/40' }}"></span>
-                                <span class="text-[10px] {{ $training['active'] ? 'text-galaxyGreen font-bold' : 'text-gray-500' }} font-mono">{{ $training['date'] }}</span>
-                                <h4 class="text-xs font-bold {{ $training['active'] ? 'text-white' : 'text-gray-400' }}">{{ $training['title'] }}</h4>
-                                <p class="text-[10px] {{ $training['active'] ? 'text-gray-500' : 'text-gray-600' }}">{{ $training['detail'] }}</p>
+                                                        <div class="relative pl-6">
+                                <span class="absolute left-0.5 top-1.5 w-3 h-3 rounded-full bg-galaxyGreen shadow-[0_0_8px_#00FF66]"></span>
+                                <span class="text-[10px] text-galaxyGreen font-bold font-mono">Dec 25, 2024</span>
+                                <h4 class="text-xs font-bold text-white">BELTEI International University</h4>
+                                <p class="text-[10px] text-gray-500">Faculty of Information Technology and Science</p>
                             </div>
-                            @endforeach
-                        </div>
+                                                        <div class="relative pl-6">
+                                <span class="absolute left-0.5 top-1.5 w-3 h-3 rounded-full bg-galaxyGreen/40"></span>
+                                <span class="text-[10px] text-gray-500 font-mono">Dec 19, 2024</span>
+                                <h4 class="text-xs font-bold text-gray-400">Master – IT Professional Skill Training</h4>
+                                <p class="text-[10px] text-gray-600">Skill: Computer program for job</p>
+                            </div>
+                                                        <div class="relative pl-6">
+                                <span class="absolute left-0.5 top-1.5 w-3 h-3 rounded-full bg-galaxyGreen/40"></span>
+                                <span class="text-[10px] text-gray-500 font-mono">Dec 06, 2022</span>
+                                <h4 class="text-xs font-bold text-gray-400">Master – IT Professional Skill Training</h4>
+                                <p class="text-[10px] text-gray-600">Skill: Computer Basic for Administration (Typing, MS Windows, Word, PowerPoint, Excel 2019)</p>
+                            </div>
+                                                        <div class="relative pl-6">
+                                <span class="absolute left-0.5 top-1.5 w-3 h-3 rounded-full bg-galaxyGreen/40"></span>
+                                <span class="text-[10px] text-gray-500 font-mono">Jun 26, 2021</span>
+                                <h4 class="text-xs font-bold text-gray-400">Master – IT Professional Skill Training</h4>
+                                <p class="text-[10px] text-gray-600">Skill: Web Developer</p>
+                            </div>
+                                                        <div class="relative pl-6">
+                                <span class="absolute left-0.5 top-1.5 w-3 h-3 rounded-full bg-galaxyGreen/40"></span>
+                                <span class="text-[10px] text-gray-500 font-mono">Jun 26, 2021</span>
+                                <h4 class="text-xs font-bold text-gray-400">Robotic STEM Study</h4>
+                                <p class="text-[10px] text-gray-600">Arduino, Robot Car, LED Control</p>
+                            </div>
+                                                    </div>
                     </section>
 
 
@@ -694,18 +649,34 @@
                                 <i class="fa-solid fa-language text-galaxyGreen"></i> LANGUAGES
                             </h2>
                             <div class="space-y-3">
-                                @foreach ($humanLanguages as $lang)
-                                <div>
+                                                                <div>
                                     <div class="flex justify-between text-xs mb-1">
-                                        <span class="text-white">{{ $lang['name'] }}</span>
-                                        <span class="{{ $lang['active'] ? 'text-galaxyGreen' : 'text-gray-600' }} text-[10px] font-mono">{{ $lang['proficiency'] }}</span>
+                                        <span class="text-white">Khmer</span>
+                                        <span class="text-galaxyGreen text-[10px] font-mono">NATIVE</span>
                                     </div>
                                     <div class="w-full bg-spaceBlack h-1.5 rounded border border-galaxyGreen/10">
-                                        <div class="{{ $lang['active'] ? 'bg-galaxyGreen shadow-[0_0_8px_#00FF66]' : 'bg-galaxyGreen/40' }} h-full rounded" style="width: {{ $lang['percentage'] }}%"></div>
+                                        <div class="bg-galaxyGreen shadow-[0_0_8px_#00FF66] h-full rounded" style="width: 100%"></div>
                                     </div>
                                 </div>
-                                @endforeach
-                            </div>
+                                                                <div>
+                                    <div class="flex justify-between text-xs mb-1">
+                                        <span class="text-white">English</span>
+                                        <span class="text-galaxyGreen text-[10px] font-mono">FLUENT</span>
+                                    </div>
+                                    <div class="w-full bg-spaceBlack h-1.5 rounded border border-galaxyGreen/10">
+                                        <div class="bg-galaxyGreen shadow-[0_0_8px_#00FF66] h-full rounded" style="width: 80%"></div>
+                                    </div>
+                                </div>
+                                                                <div>
+                                    <div class="flex justify-between text-xs mb-1">
+                                        <span class="text-white">Chinese</span>
+                                        <span class="text-gray-600 text-[10px] font-mono">BASIC</span>
+                                    </div>
+                                    <div class="w-full bg-spaceBlack h-1.5 rounded border border-galaxyGreen/10">
+                                        <div class="bg-galaxyGreen/40 h-full rounded" style="width: 35%"></div>
+                                    </div>
+                                </div>
+                                                            </div>
                         </section>
 
                         <!-- 5.2. CONTINUOUS LEARNING PANEL -->
@@ -753,125 +724,7 @@
                     </div>
                 </div>
                 <!-- 6. PROGRAMMING LANGUAGES PANEL -->
-                @php
-                $skills = [
-                [
-                'name' => 'C / C++',
-                'icons' => ['devicon-c-plain', 'devicon-cplusplus-plain'],
-                'category' => 'SYSTEMS',
-                'percentage' => 80,
-                'type' => 'main',
-                ],
-                [
-                'name' => 'C#',
-                'icons' => ['devicon-csharp-plain'],
-                'category' => 'SYSTEMS',
-                'percentage' => 82,
-                'type' => 'main',
-                ],
-                [
-                'name' => 'HTML5',
-                'icons' => ['devicon-html5-plain'],
-                'category' => 'UI STRUCT',
-                'percentage' => 95,
-                'type' => 'frontend',
-                ],
-                [
-                'name' => 'CSS3',
-                'icons' => ['devicon-css3-plain'],
-                'category' => 'UI STYLE',
-                'percentage' => 90,
-                'type' => 'frontend',
-                ],
-                [
-                'name' => 'JavaScript',
-                'icons' => ['devicon-javascript-plain'],
-                'category' => 'SCRIPTING',
-                'percentage' => 95,
-                'type' => 'frontend',
-                ],
-                [
-                'name' => 'Bootstrap',
-                'icons' => ['devicon-bootstrap-plain'],
-                'category' => 'UI KIT',
-                'percentage' => 85,
-                'type' => 'frontend',
-                ],
-                [
-                'name' => 'Tailwind CSS',
-                'icons' => ['devicon-tailwindcss-original'],
-                'category' => 'UTILITY CSS',
-                'percentage' => 95,
-                'type' => 'frontend',
-                ],
-                [
-                'name' => 'React JS',
-                'icons' => ['devicon-react-original'],
-                'category' => 'UI LIBRARY',
-                'percentage' => 90,
-                'type' => 'frontend',
-                ],
-                [
-                'name' => 'PHP',
-                'icons' => ['devicon-php-plain'],
-                'category' => 'BACKEND',
-                'percentage' => 88,
-                'type' => 'backend',
-                ],
-                [
-                'name' => 'Laravel',
-                'icons' => ['devicon-laravel-original'],
-                'category' => 'MVC FRAMEWORK',
-                'percentage' => 92,
-                'type' => 'backend',
-                ],
-                [
-                'name' => 'Python',
-                'icons' => ['devicon-python-plain'],
-                'category' => 'SCRIPTING',
-                'percentage' => 85,
-                'type' => 'main backend',
-                ],
-                [
-                'name' => 'Java',
-                'icons' => ['devicon-java-plain'],
-                'category' => 'ENTERPRISE',
-                'percentage' => 75,
-                'type' => 'main backend',
-                ],
-                [
-                'name' => 'SQL',
-                'icons' => ['fa-solid fa-database'],
-                'category' => 'DATA QUERY',
-                'percentage' => 88,
-                'isFontAwesome' => true,
-                'type' => 'database',
-                ],
-                [
-                'name' => 'MySQL',
-                'icons' => ['devicon-mysql-plain'],
-                'category' => 'DATABASE',
-                'percentage' => 90,
-                'type' => 'database',
-                ],
-                [
-                'name' => 'Oracle DB',
-                'icons' => ['devicon-oracle-original'],
-                'category' => 'ENTERPRISE',
-                'percentage' => 80,
-                'type' => 'database',
-                ],
-                [
-                'name' => 'GitLab',
-                'icons' => ['devicon-gitlab-plain'],
-                'category' => 'DEVOPS',
-                'percentage' => 85,
-                'type' => 'other',
-                ],
-
-                ];
-                @endphp
-
+                
 
                 <section class="border border-galaxyGreen/20 bg-nebulaDark/60 backdrop-blur-md rounded-2xl p-5 shadow-neon-green">
                     <h2 class="text-sm font-bold text-white tracking-widest uppercase mb-4 flex items-center gap-2 border-b border-galaxyGreen/10 pb-2">
@@ -901,26 +754,22 @@
                     </div>
 
                     <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-                        @foreach ($skills as $skill)
-                        <div class="skill-card group p-3 bg-spaceBlack/40 backdrop-blur-sm border border-galaxyGreen/15 hover:border-galaxyGreen/50 rounded-xl flex items-center justify-between gap-4 transition-all duration-300 hover:shadow-neon-green transform hover:-translate-y-0.5" data-category="{{ $skill['type'] }}">
+                                                <div class="skill-card group p-3 bg-spaceBlack/40 backdrop-blur-sm border border-galaxyGreen/15 hover:border-galaxyGreen/50 rounded-xl flex items-center justify-between gap-4 transition-all duration-300 hover:shadow-neon-green transform hover:-translate-y-0.5" data-category="main">
                             <!-- Left: Icons & Name -->
                             <div class="flex items-center gap-3">
-                                <div class="flex gap-1.5 justify-center {{ isset($skill['isFontAwesome']) ? 'text-sky-400' : '' }} group-hover:scale-105 transition-transform duration-300">
-                                    @foreach ($skill['icons'] as $icon)
-                                    <i class="{{ $icon }} colored text-2xl"></i>
-                                    @endforeach
-                                </div>
-                                <span class="text-xs font-bold text-white tracking-wide">{{ $skill['name'] }}</span>
+                                <div class="flex gap-1.5 justify-center  group-hover:scale-105 transition-transform duration-300">
+                                                                        <i class="devicon-c-plain colored text-2xl"></i>
+                                                                        <i class="devicon-cplusplus-plain colored text-2xl"></i>
+                                                                    </div>
+                                <span class="text-xs font-bold text-white tracking-wide">C / C++</span>
                             </div>
 
                             <!-- Right: Category Badge & Progress Track -->
                             <div class="flex items-center gap-4 flex-1 justify-end max-w-[280px]">
                                 <div class="hidden sm:block">
                                     <span class="text-[9px] font-mono tracking-widest px-2.5 py-0.5 rounded-full border 
-                                            {{ ($skill['category'] === 'SYSTEMS' || $skill['category'] === 'DATA QUERY' || $skill['category'] === 'DATABASE' || $skill['category'] === 'ENTERPRISE') 
-                                                ? 'text-premiumGold bg-premiumGold/10 border-premiumGold/25' 
-                                                : 'text-galaxyGreen bg-galaxyGreen/10 border-galaxyGreen/25' }}">
-                                        {{ $skill['category'] }}
+                                            text-premiumGold bg-premiumGold/10 border-premiumGold/25">
+                                        SYSTEMS
                                     </span>
                                 </div>
 
@@ -928,16 +777,465 @@
                                 <div class="w-24 sm:w-32">
                                     <div class="flex justify-between items-center text-[8px] mb-0.5 font-mono">
                                         <span class="text-gray-500">PRO</span>
-                                        <span class="text-galaxyGreen font-bold group-hover:text-premiumGold transition-colors">{{ $skill['percentage'] }}%</span>
+                                        <span class="text-galaxyGreen font-bold group-hover:text-premiumGold transition-colors">80%</span>
                                     </div>
                                     <div class="w-full bg-spaceBlack h-1 rounded-full overflow-hidden border border-galaxyGreen/10">
-                                        <div class="bg-galaxyGreen h-full rounded-full shadow-[0_0_8px_#00FF66] transition-all duration-500 group-hover:bg-premiumGold group-hover:shadow-[0_0_8px_#E6A15C]" style="width: {{ $skill['percentage'] }}%"></div>
+                                        <div class="bg-galaxyGreen h-full rounded-full shadow-[0_0_8px_#00FF66] transition-all duration-500 group-hover:bg-premiumGold group-hover:shadow-[0_0_8px_#E6A15C]" style="width: 80%"></div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        @endforeach
-                    </div>
+                                                <div class="skill-card group p-3 bg-spaceBlack/40 backdrop-blur-sm border border-galaxyGreen/15 hover:border-galaxyGreen/50 rounded-xl flex items-center justify-between gap-4 transition-all duration-300 hover:shadow-neon-green transform hover:-translate-y-0.5" data-category="main">
+                            <!-- Left: Icons & Name -->
+                            <div class="flex items-center gap-3">
+                                <div class="flex gap-1.5 justify-center  group-hover:scale-105 transition-transform duration-300">
+                                                                        <i class="devicon-csharp-plain colored text-2xl"></i>
+                                                                    </div>
+                                <span class="text-xs font-bold text-white tracking-wide">C#</span>
+                            </div>
+
+                            <!-- Right: Category Badge & Progress Track -->
+                            <div class="flex items-center gap-4 flex-1 justify-end max-w-[280px]">
+                                <div class="hidden sm:block">
+                                    <span class="text-[9px] font-mono tracking-widest px-2.5 py-0.5 rounded-full border 
+                                            text-premiumGold bg-premiumGold/10 border-premiumGold/25">
+                                        SYSTEMS
+                                    </span>
+                                </div>
+
+                                <!-- Progress Track -->
+                                <div class="w-24 sm:w-32">
+                                    <div class="flex justify-between items-center text-[8px] mb-0.5 font-mono">
+                                        <span class="text-gray-500">PRO</span>
+                                        <span class="text-galaxyGreen font-bold group-hover:text-premiumGold transition-colors">82%</span>
+                                    </div>
+                                    <div class="w-full bg-spaceBlack h-1 rounded-full overflow-hidden border border-galaxyGreen/10">
+                                        <div class="bg-galaxyGreen h-full rounded-full shadow-[0_0_8px_#00FF66] transition-all duration-500 group-hover:bg-premiumGold group-hover:shadow-[0_0_8px_#E6A15C]" style="width: 82%"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                                                <div class="skill-card group p-3 bg-spaceBlack/40 backdrop-blur-sm border border-galaxyGreen/15 hover:border-galaxyGreen/50 rounded-xl flex items-center justify-between gap-4 transition-all duration-300 hover:shadow-neon-green transform hover:-translate-y-0.5" data-category="frontend">
+                            <!-- Left: Icons & Name -->
+                            <div class="flex items-center gap-3">
+                                <div class="flex gap-1.5 justify-center  group-hover:scale-105 transition-transform duration-300">
+                                                                        <i class="devicon-html5-plain colored text-2xl"></i>
+                                                                    </div>
+                                <span class="text-xs font-bold text-white tracking-wide">HTML5</span>
+                            </div>
+
+                            <!-- Right: Category Badge & Progress Track -->
+                            <div class="flex items-center gap-4 flex-1 justify-end max-w-[280px]">
+                                <div class="hidden sm:block">
+                                    <span class="text-[9px] font-mono tracking-widest px-2.5 py-0.5 rounded-full border 
+                                            text-galaxyGreen bg-galaxyGreen/10 border-galaxyGreen/25">
+                                        UI STRUCT
+                                    </span>
+                                </div>
+
+                                <!-- Progress Track -->
+                                <div class="w-24 sm:w-32">
+                                    <div class="flex justify-between items-center text-[8px] mb-0.5 font-mono">
+                                        <span class="text-gray-500">PRO</span>
+                                        <span class="text-galaxyGreen font-bold group-hover:text-premiumGold transition-colors">95%</span>
+                                    </div>
+                                    <div class="w-full bg-spaceBlack h-1 rounded-full overflow-hidden border border-galaxyGreen/10">
+                                        <div class="bg-galaxyGreen h-full rounded-full shadow-[0_0_8px_#00FF66] transition-all duration-500 group-hover:bg-premiumGold group-hover:shadow-[0_0_8px_#E6A15C]" style="width: 95%"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                                                <div class="skill-card group p-3 bg-spaceBlack/40 backdrop-blur-sm border border-galaxyGreen/15 hover:border-galaxyGreen/50 rounded-xl flex items-center justify-between gap-4 transition-all duration-300 hover:shadow-neon-green transform hover:-translate-y-0.5" data-category="frontend">
+                            <!-- Left: Icons & Name -->
+                            <div class="flex items-center gap-3">
+                                <div class="flex gap-1.5 justify-center  group-hover:scale-105 transition-transform duration-300">
+                                                                        <i class="devicon-css3-plain colored text-2xl"></i>
+                                                                    </div>
+                                <span class="text-xs font-bold text-white tracking-wide">CSS3</span>
+                            </div>
+
+                            <!-- Right: Category Badge & Progress Track -->
+                            <div class="flex items-center gap-4 flex-1 justify-end max-w-[280px]">
+                                <div class="hidden sm:block">
+                                    <span class="text-[9px] font-mono tracking-widest px-2.5 py-0.5 rounded-full border 
+                                            text-galaxyGreen bg-galaxyGreen/10 border-galaxyGreen/25">
+                                        UI STYLE
+                                    </span>
+                                </div>
+
+                                <!-- Progress Track -->
+                                <div class="w-24 sm:w-32">
+                                    <div class="flex justify-between items-center text-[8px] mb-0.5 font-mono">
+                                        <span class="text-gray-500">PRO</span>
+                                        <span class="text-galaxyGreen font-bold group-hover:text-premiumGold transition-colors">90%</span>
+                                    </div>
+                                    <div class="w-full bg-spaceBlack h-1 rounded-full overflow-hidden border border-galaxyGreen/10">
+                                        <div class="bg-galaxyGreen h-full rounded-full shadow-[0_0_8px_#00FF66] transition-all duration-500 group-hover:bg-premiumGold group-hover:shadow-[0_0_8px_#E6A15C]" style="width: 90%"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                                                <div class="skill-card group p-3 bg-spaceBlack/40 backdrop-blur-sm border border-galaxyGreen/15 hover:border-galaxyGreen/50 rounded-xl flex items-center justify-between gap-4 transition-all duration-300 hover:shadow-neon-green transform hover:-translate-y-0.5" data-category="frontend">
+                            <!-- Left: Icons & Name -->
+                            <div class="flex items-center gap-3">
+                                <div class="flex gap-1.5 justify-center  group-hover:scale-105 transition-transform duration-300">
+                                                                        <i class="devicon-javascript-plain colored text-2xl"></i>
+                                                                    </div>
+                                <span class="text-xs font-bold text-white tracking-wide">JavaScript</span>
+                            </div>
+
+                            <!-- Right: Category Badge & Progress Track -->
+                            <div class="flex items-center gap-4 flex-1 justify-end max-w-[280px]">
+                                <div class="hidden sm:block">
+                                    <span class="text-[9px] font-mono tracking-widest px-2.5 py-0.5 rounded-full border 
+                                            text-galaxyGreen bg-galaxyGreen/10 border-galaxyGreen/25">
+                                        SCRIPTING
+                                    </span>
+                                </div>
+
+                                <!-- Progress Track -->
+                                <div class="w-24 sm:w-32">
+                                    <div class="flex justify-between items-center text-[8px] mb-0.5 font-mono">
+                                        <span class="text-gray-500">PRO</span>
+                                        <span class="text-galaxyGreen font-bold group-hover:text-premiumGold transition-colors">95%</span>
+                                    </div>
+                                    <div class="w-full bg-spaceBlack h-1 rounded-full overflow-hidden border border-galaxyGreen/10">
+                                        <div class="bg-galaxyGreen h-full rounded-full shadow-[0_0_8px_#00FF66] transition-all duration-500 group-hover:bg-premiumGold group-hover:shadow-[0_0_8px_#E6A15C]" style="width: 95%"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                                                <div class="skill-card group p-3 bg-spaceBlack/40 backdrop-blur-sm border border-galaxyGreen/15 hover:border-galaxyGreen/50 rounded-xl flex items-center justify-between gap-4 transition-all duration-300 hover:shadow-neon-green transform hover:-translate-y-0.5" data-category="frontend">
+                            <!-- Left: Icons & Name -->
+                            <div class="flex items-center gap-3">
+                                <div class="flex gap-1.5 justify-center  group-hover:scale-105 transition-transform duration-300">
+                                                                        <i class="devicon-bootstrap-plain colored text-2xl"></i>
+                                                                    </div>
+                                <span class="text-xs font-bold text-white tracking-wide">Bootstrap</span>
+                            </div>
+
+                            <!-- Right: Category Badge & Progress Track -->
+                            <div class="flex items-center gap-4 flex-1 justify-end max-w-[280px]">
+                                <div class="hidden sm:block">
+                                    <span class="text-[9px] font-mono tracking-widest px-2.5 py-0.5 rounded-full border 
+                                            text-galaxyGreen bg-galaxyGreen/10 border-galaxyGreen/25">
+                                        UI KIT
+                                    </span>
+                                </div>
+
+                                <!-- Progress Track -->
+                                <div class="w-24 sm:w-32">
+                                    <div class="flex justify-between items-center text-[8px] mb-0.5 font-mono">
+                                        <span class="text-gray-500">PRO</span>
+                                        <span class="text-galaxyGreen font-bold group-hover:text-premiumGold transition-colors">85%</span>
+                                    </div>
+                                    <div class="w-full bg-spaceBlack h-1 rounded-full overflow-hidden border border-galaxyGreen/10">
+                                        <div class="bg-galaxyGreen h-full rounded-full shadow-[0_0_8px_#00FF66] transition-all duration-500 group-hover:bg-premiumGold group-hover:shadow-[0_0_8px_#E6A15C]" style="width: 85%"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                                                <div class="skill-card group p-3 bg-spaceBlack/40 backdrop-blur-sm border border-galaxyGreen/15 hover:border-galaxyGreen/50 rounded-xl flex items-center justify-between gap-4 transition-all duration-300 hover:shadow-neon-green transform hover:-translate-y-0.5" data-category="frontend">
+                            <!-- Left: Icons & Name -->
+                            <div class="flex items-center gap-3">
+                                <div class="flex gap-1.5 justify-center  group-hover:scale-105 transition-transform duration-300">
+                                                                        <i class="devicon-tailwindcss-original colored text-2xl"></i>
+                                                                    </div>
+                                <span class="text-xs font-bold text-white tracking-wide">Tailwind CSS</span>
+                            </div>
+
+                            <!-- Right: Category Badge & Progress Track -->
+                            <div class="flex items-center gap-4 flex-1 justify-end max-w-[280px]">
+                                <div class="hidden sm:block">
+                                    <span class="text-[9px] font-mono tracking-widest px-2.5 py-0.5 rounded-full border 
+                                            text-galaxyGreen bg-galaxyGreen/10 border-galaxyGreen/25">
+                                        UTILITY CSS
+                                    </span>
+                                </div>
+
+                                <!-- Progress Track -->
+                                <div class="w-24 sm:w-32">
+                                    <div class="flex justify-between items-center text-[8px] mb-0.5 font-mono">
+                                        <span class="text-gray-500">PRO</span>
+                                        <span class="text-galaxyGreen font-bold group-hover:text-premiumGold transition-colors">95%</span>
+                                    </div>
+                                    <div class="w-full bg-spaceBlack h-1 rounded-full overflow-hidden border border-galaxyGreen/10">
+                                        <div class="bg-galaxyGreen h-full rounded-full shadow-[0_0_8px_#00FF66] transition-all duration-500 group-hover:bg-premiumGold group-hover:shadow-[0_0_8px_#E6A15C]" style="width: 95%"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                                                <div class="skill-card group p-3 bg-spaceBlack/40 backdrop-blur-sm border border-galaxyGreen/15 hover:border-galaxyGreen/50 rounded-xl flex items-center justify-between gap-4 transition-all duration-300 hover:shadow-neon-green transform hover:-translate-y-0.5" data-category="frontend">
+                            <!-- Left: Icons & Name -->
+                            <div class="flex items-center gap-3">
+                                <div class="flex gap-1.5 justify-center  group-hover:scale-105 transition-transform duration-300">
+                                                                        <i class="devicon-react-original colored text-2xl"></i>
+                                                                    </div>
+                                <span class="text-xs font-bold text-white tracking-wide">React JS</span>
+                            </div>
+
+                            <!-- Right: Category Badge & Progress Track -->
+                            <div class="flex items-center gap-4 flex-1 justify-end max-w-[280px]">
+                                <div class="hidden sm:block">
+                                    <span class="text-[9px] font-mono tracking-widest px-2.5 py-0.5 rounded-full border 
+                                            text-galaxyGreen bg-galaxyGreen/10 border-galaxyGreen/25">
+                                        UI LIBRARY
+                                    </span>
+                                </div>
+
+                                <!-- Progress Track -->
+                                <div class="w-24 sm:w-32">
+                                    <div class="flex justify-between items-center text-[8px] mb-0.5 font-mono">
+                                        <span class="text-gray-500">PRO</span>
+                                        <span class="text-galaxyGreen font-bold group-hover:text-premiumGold transition-colors">90%</span>
+                                    </div>
+                                    <div class="w-full bg-spaceBlack h-1 rounded-full overflow-hidden border border-galaxyGreen/10">
+                                        <div class="bg-galaxyGreen h-full rounded-full shadow-[0_0_8px_#00FF66] transition-all duration-500 group-hover:bg-premiumGold group-hover:shadow-[0_0_8px_#E6A15C]" style="width: 90%"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                                                <div class="skill-card group p-3 bg-spaceBlack/40 backdrop-blur-sm border border-galaxyGreen/15 hover:border-galaxyGreen/50 rounded-xl flex items-center justify-between gap-4 transition-all duration-300 hover:shadow-neon-green transform hover:-translate-y-0.5" data-category="backend">
+                            <!-- Left: Icons & Name -->
+                            <div class="flex items-center gap-3">
+                                <div class="flex gap-1.5 justify-center  group-hover:scale-105 transition-transform duration-300">
+                                                                        <i class="devicon-php-plain colored text-2xl"></i>
+                                                                    </div>
+                                <span class="text-xs font-bold text-white tracking-wide">PHP</span>
+                            </div>
+
+                            <!-- Right: Category Badge & Progress Track -->
+                            <div class="flex items-center gap-4 flex-1 justify-end max-w-[280px]">
+                                <div class="hidden sm:block">
+                                    <span class="text-[9px] font-mono tracking-widest px-2.5 py-0.5 rounded-full border 
+                                            text-galaxyGreen bg-galaxyGreen/10 border-galaxyGreen/25">
+                                        BACKEND
+                                    </span>
+                                </div>
+
+                                <!-- Progress Track -->
+                                <div class="w-24 sm:w-32">
+                                    <div class="flex justify-between items-center text-[8px] mb-0.5 font-mono">
+                                        <span class="text-gray-500">PRO</span>
+                                        <span class="text-galaxyGreen font-bold group-hover:text-premiumGold transition-colors">88%</span>
+                                    </div>
+                                    <div class="w-full bg-spaceBlack h-1 rounded-full overflow-hidden border border-galaxyGreen/10">
+                                        <div class="bg-galaxyGreen h-full rounded-full shadow-[0_0_8px_#00FF66] transition-all duration-500 group-hover:bg-premiumGold group-hover:shadow-[0_0_8px_#E6A15C]" style="width: 88%"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                                                <div class="skill-card group p-3 bg-spaceBlack/40 backdrop-blur-sm border border-galaxyGreen/15 hover:border-galaxyGreen/50 rounded-xl flex items-center justify-between gap-4 transition-all duration-300 hover:shadow-neon-green transform hover:-translate-y-0.5" data-category="backend">
+                            <!-- Left: Icons & Name -->
+                            <div class="flex items-center gap-3">
+                                <div class="flex gap-1.5 justify-center  group-hover:scale-105 transition-transform duration-300">
+                                                                        <i class="devicon-laravel-original colored text-2xl"></i>
+                                                                    </div>
+                                <span class="text-xs font-bold text-white tracking-wide">Laravel</span>
+                            </div>
+
+                            <!-- Right: Category Badge & Progress Track -->
+                            <div class="flex items-center gap-4 flex-1 justify-end max-w-[280px]">
+                                <div class="hidden sm:block">
+                                    <span class="text-[9px] font-mono tracking-widest px-2.5 py-0.5 rounded-full border 
+                                            text-galaxyGreen bg-galaxyGreen/10 border-galaxyGreen/25">
+                                        MVC FRAMEWORK
+                                    </span>
+                                </div>
+
+                                <!-- Progress Track -->
+                                <div class="w-24 sm:w-32">
+                                    <div class="flex justify-between items-center text-[8px] mb-0.5 font-mono">
+                                        <span class="text-gray-500">PRO</span>
+                                        <span class="text-galaxyGreen font-bold group-hover:text-premiumGold transition-colors">92%</span>
+                                    </div>
+                                    <div class="w-full bg-spaceBlack h-1 rounded-full overflow-hidden border border-galaxyGreen/10">
+                                        <div class="bg-galaxyGreen h-full rounded-full shadow-[0_0_8px_#00FF66] transition-all duration-500 group-hover:bg-premiumGold group-hover:shadow-[0_0_8px_#E6A15C]" style="width: 92%"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                                                <div class="skill-card group p-3 bg-spaceBlack/40 backdrop-blur-sm border border-galaxyGreen/15 hover:border-galaxyGreen/50 rounded-xl flex items-center justify-between gap-4 transition-all duration-300 hover:shadow-neon-green transform hover:-translate-y-0.5" data-category="main backend">
+                            <!-- Left: Icons & Name -->
+                            <div class="flex items-center gap-3">
+                                <div class="flex gap-1.5 justify-center  group-hover:scale-105 transition-transform duration-300">
+                                                                        <i class="devicon-python-plain colored text-2xl"></i>
+                                                                    </div>
+                                <span class="text-xs font-bold text-white tracking-wide">Python</span>
+                            </div>
+
+                            <!-- Right: Category Badge & Progress Track -->
+                            <div class="flex items-center gap-4 flex-1 justify-end max-w-[280px]">
+                                <div class="hidden sm:block">
+                                    <span class="text-[9px] font-mono tracking-widest px-2.5 py-0.5 rounded-full border 
+                                            text-galaxyGreen bg-galaxyGreen/10 border-galaxyGreen/25">
+                                        SCRIPTING
+                                    </span>
+                                </div>
+
+                                <!-- Progress Track -->
+                                <div class="w-24 sm:w-32">
+                                    <div class="flex justify-between items-center text-[8px] mb-0.5 font-mono">
+                                        <span class="text-gray-500">PRO</span>
+                                        <span class="text-galaxyGreen font-bold group-hover:text-premiumGold transition-colors">85%</span>
+                                    </div>
+                                    <div class="w-full bg-spaceBlack h-1 rounded-full overflow-hidden border border-galaxyGreen/10">
+                                        <div class="bg-galaxyGreen h-full rounded-full shadow-[0_0_8px_#00FF66] transition-all duration-500 group-hover:bg-premiumGold group-hover:shadow-[0_0_8px_#E6A15C]" style="width: 85%"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                                                <div class="skill-card group p-3 bg-spaceBlack/40 backdrop-blur-sm border border-galaxyGreen/15 hover:border-galaxyGreen/50 rounded-xl flex items-center justify-between gap-4 transition-all duration-300 hover:shadow-neon-green transform hover:-translate-y-0.5" data-category="main backend">
+                            <!-- Left: Icons & Name -->
+                            <div class="flex items-center gap-3">
+                                <div class="flex gap-1.5 justify-center  group-hover:scale-105 transition-transform duration-300">
+                                                                        <i class="devicon-java-plain colored text-2xl"></i>
+                                                                    </div>
+                                <span class="text-xs font-bold text-white tracking-wide">Java</span>
+                            </div>
+
+                            <!-- Right: Category Badge & Progress Track -->
+                            <div class="flex items-center gap-4 flex-1 justify-end max-w-[280px]">
+                                <div class="hidden sm:block">
+                                    <span class="text-[9px] font-mono tracking-widest px-2.5 py-0.5 rounded-full border 
+                                            text-premiumGold bg-premiumGold/10 border-premiumGold/25">
+                                        ENTERPRISE
+                                    </span>
+                                </div>
+
+                                <!-- Progress Track -->
+                                <div class="w-24 sm:w-32">
+                                    <div class="flex justify-between items-center text-[8px] mb-0.5 font-mono">
+                                        <span class="text-gray-500">PRO</span>
+                                        <span class="text-galaxyGreen font-bold group-hover:text-premiumGold transition-colors">75%</span>
+                                    </div>
+                                    <div class="w-full bg-spaceBlack h-1 rounded-full overflow-hidden border border-galaxyGreen/10">
+                                        <div class="bg-galaxyGreen h-full rounded-full shadow-[0_0_8px_#00FF66] transition-all duration-500 group-hover:bg-premiumGold group-hover:shadow-[0_0_8px_#E6A15C]" style="width: 75%"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                                                <div class="skill-card group p-3 bg-spaceBlack/40 backdrop-blur-sm border border-galaxyGreen/15 hover:border-galaxyGreen/50 rounded-xl flex items-center justify-between gap-4 transition-all duration-300 hover:shadow-neon-green transform hover:-translate-y-0.5" data-category="database">
+                            <!-- Left: Icons & Name -->
+                            <div class="flex items-center gap-3">
+                                <div class="flex gap-1.5 justify-center text-sky-400 group-hover:scale-105 transition-transform duration-300">
+                                                                        <i class="fa-solid fa-database colored text-2xl"></i>
+                                                                    </div>
+                                <span class="text-xs font-bold text-white tracking-wide">SQL</span>
+                            </div>
+
+                            <!-- Right: Category Badge & Progress Track -->
+                            <div class="flex items-center gap-4 flex-1 justify-end max-w-[280px]">
+                                <div class="hidden sm:block">
+                                    <span class="text-[9px] font-mono tracking-widest px-2.5 py-0.5 rounded-full border 
+                                            text-premiumGold bg-premiumGold/10 border-premiumGold/25">
+                                        DATA QUERY
+                                    </span>
+                                </div>
+
+                                <!-- Progress Track -->
+                                <div class="w-24 sm:w-32">
+                                    <div class="flex justify-between items-center text-[8px] mb-0.5 font-mono">
+                                        <span class="text-gray-500">PRO</span>
+                                        <span class="text-galaxyGreen font-bold group-hover:text-premiumGold transition-colors">88%</span>
+                                    </div>
+                                    <div class="w-full bg-spaceBlack h-1 rounded-full overflow-hidden border border-galaxyGreen/10">
+                                        <div class="bg-galaxyGreen h-full rounded-full shadow-[0_0_8px_#00FF66] transition-all duration-500 group-hover:bg-premiumGold group-hover:shadow-[0_0_8px_#E6A15C]" style="width: 88%"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                                                <div class="skill-card group p-3 bg-spaceBlack/40 backdrop-blur-sm border border-galaxyGreen/15 hover:border-galaxyGreen/50 rounded-xl flex items-center justify-between gap-4 transition-all duration-300 hover:shadow-neon-green transform hover:-translate-y-0.5" data-category="database">
+                            <!-- Left: Icons & Name -->
+                            <div class="flex items-center gap-3">
+                                <div class="flex gap-1.5 justify-center  group-hover:scale-105 transition-transform duration-300">
+                                                                        <i class="devicon-mysql-plain colored text-2xl"></i>
+                                                                    </div>
+                                <span class="text-xs font-bold text-white tracking-wide">MySQL</span>
+                            </div>
+
+                            <!-- Right: Category Badge & Progress Track -->
+                            <div class="flex items-center gap-4 flex-1 justify-end max-w-[280px]">
+                                <div class="hidden sm:block">
+                                    <span class="text-[9px] font-mono tracking-widest px-2.5 py-0.5 rounded-full border 
+                                            text-premiumGold bg-premiumGold/10 border-premiumGold/25">
+                                        DATABASE
+                                    </span>
+                                </div>
+
+                                <!-- Progress Track -->
+                                <div class="w-24 sm:w-32">
+                                    <div class="flex justify-between items-center text-[8px] mb-0.5 font-mono">
+                                        <span class="text-gray-500">PRO</span>
+                                        <span class="text-galaxyGreen font-bold group-hover:text-premiumGold transition-colors">90%</span>
+                                    </div>
+                                    <div class="w-full bg-spaceBlack h-1 rounded-full overflow-hidden border border-galaxyGreen/10">
+                                        <div class="bg-galaxyGreen h-full rounded-full shadow-[0_0_8px_#00FF66] transition-all duration-500 group-hover:bg-premiumGold group-hover:shadow-[0_0_8px_#E6A15C]" style="width: 90%"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                                                <div class="skill-card group p-3 bg-spaceBlack/40 backdrop-blur-sm border border-galaxyGreen/15 hover:border-galaxyGreen/50 rounded-xl flex items-center justify-between gap-4 transition-all duration-300 hover:shadow-neon-green transform hover:-translate-y-0.5" data-category="database">
+                            <!-- Left: Icons & Name -->
+                            <div class="flex items-center gap-3">
+                                <div class="flex gap-1.5 justify-center  group-hover:scale-105 transition-transform duration-300">
+                                                                        <i class="devicon-oracle-original colored text-2xl"></i>
+                                                                    </div>
+                                <span class="text-xs font-bold text-white tracking-wide">Oracle DB</span>
+                            </div>
+
+                            <!-- Right: Category Badge & Progress Track -->
+                            <div class="flex items-center gap-4 flex-1 justify-end max-w-[280px]">
+                                <div class="hidden sm:block">
+                                    <span class="text-[9px] font-mono tracking-widest px-2.5 py-0.5 rounded-full border 
+                                            text-premiumGold bg-premiumGold/10 border-premiumGold/25">
+                                        ENTERPRISE
+                                    </span>
+                                </div>
+
+                                <!-- Progress Track -->
+                                <div class="w-24 sm:w-32">
+                                    <div class="flex justify-between items-center text-[8px] mb-0.5 font-mono">
+                                        <span class="text-gray-500">PRO</span>
+                                        <span class="text-galaxyGreen font-bold group-hover:text-premiumGold transition-colors">80%</span>
+                                    </div>
+                                    <div class="w-full bg-spaceBlack h-1 rounded-full overflow-hidden border border-galaxyGreen/10">
+                                        <div class="bg-galaxyGreen h-full rounded-full shadow-[0_0_8px_#00FF66] transition-all duration-500 group-hover:bg-premiumGold group-hover:shadow-[0_0_8px_#E6A15C]" style="width: 80%"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                                                <div class="skill-card group p-3 bg-spaceBlack/40 backdrop-blur-sm border border-galaxyGreen/15 hover:border-galaxyGreen/50 rounded-xl flex items-center justify-between gap-4 transition-all duration-300 hover:shadow-neon-green transform hover:-translate-y-0.5" data-category="other">
+                            <!-- Left: Icons & Name -->
+                            <div class="flex items-center gap-3">
+                                <div class="flex gap-1.5 justify-center  group-hover:scale-105 transition-transform duration-300">
+                                                                        <i class="devicon-gitlab-plain colored text-2xl"></i>
+                                                                    </div>
+                                <span class="text-xs font-bold text-white tracking-wide">GitLab</span>
+                            </div>
+
+                            <!-- Right: Category Badge & Progress Track -->
+                            <div class="flex items-center gap-4 flex-1 justify-end max-w-[280px]">
+                                <div class="hidden sm:block">
+                                    <span class="text-[9px] font-mono tracking-widest px-2.5 py-0.5 rounded-full border 
+                                            text-galaxyGreen bg-galaxyGreen/10 border-galaxyGreen/25">
+                                        DEVOPS
+                                    </span>
+                                </div>
+
+                                <!-- Progress Track -->
+                                <div class="w-24 sm:w-32">
+                                    <div class="flex justify-between items-center text-[8px] mb-0.5 font-mono">
+                                        <span class="text-gray-500">PRO</span>
+                                        <span class="text-galaxyGreen font-bold group-hover:text-premiumGold transition-colors">85%</span>
+                                    </div>
+                                    <div class="w-full bg-spaceBlack h-1 rounded-full overflow-hidden border border-galaxyGreen/10">
+                                        <div class="bg-galaxyGreen h-full rounded-full shadow-[0_0_8px_#00FF66] transition-all duration-500 group-hover:bg-premiumGold group-hover:shadow-[0_0_8px_#E6A15C]" style="width: 85%"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                                            </div>
                 </section>
 
             </div>
