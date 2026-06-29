@@ -206,6 +206,10 @@
             max-width: 100%;
             vertical-align: bottom;
         }
+
+        .github-dark-calendar {
+            filter: invert(1) hue-rotate(180deg) saturate(1.8) brightness(1.2);
+        }
     </style>
 </head>
 
@@ -611,14 +615,14 @@
                                 <div class="absolute inset-0 bg-gradient-to-r from-galaxyGreen/0 via-galaxyGreen/5 to-galaxyGreen/0 opacity-0 group-hover/card:opacity-100 transition-opacity translate-x-[-100%] group-hover/card:translate-x-[100%] duration-1000"></div>
                                 <div class="flex justify-between items-start mb-2">
                                     <h4 class="text-xs font-bold text-white group-hover/card:text-galaxyGreen flex items-center gap-2">
-                                        <i class="fa-solid fa-database text-[10px]"></i> Database Architecture
+                                        <i class="fa-solid fa-database text-[10px]"></i> Database Design Project
                                     </h4>
-                                    <span class="text-[9px] text-premiumGold font-mono border border-premiumGold/30 px-1.5 py-0.5 rounded bg-premiumGold/10">A+ GRADE</span>
+                                    <span class="text-[9px] text-premiumGold font-mono border border-premiumGold/30 px-1.5 py-0.5 rounded bg-premiumGold/10">JAN 2025</span>
                                 </div>
-                                <p class="text-[10px] text-gray-500 mb-3">Designed normalized schemas and ER diagrams for a distributed university library system.</p>
+                                <p class="text-[10px] text-gray-500 mb-3">Designed ER diagram and normalized tables for university library system.</p>
                                 <div class="flex gap-2 relative z-10">
-                                    <a href="#" class="text-[9px] font-mono text-gray-400 hover:text-white bg-spaceBlack border border-gray-700 hover:border-galaxyGreen px-2 py-1 rounded transition-colors"><i class="fa-brands fa-github"></i> Repository</a>
-                                    <a href="#" class="text-[9px] font-mono text-gray-400 hover:text-white bg-spaceBlack border border-gray-700 hover:border-galaxyGreen px-2 py-1 rounded transition-colors"><i class="fa-solid fa-file-pdf"></i> Report</a>
+                                    <a href="https://github.com/suensereypanha-maker/sql-schema" target="_blank" class="text-[9px] font-mono text-gray-400 hover:text-white bg-spaceBlack border border-gray-700 hover:border-galaxyGreen px-2 py-1 rounded transition-colors"><i class="fa-brands fa-github"></i> SQL Schema</a>
+                                    <a href="https://github.com/suensereypanha-maker/er-diagram" target="_blank" class="text-[9px] font-mono text-gray-400 hover:text-white bg-spaceBlack border border-gray-700 hover:border-galaxyGreen px-2 py-1 rounded transition-colors"><i class="fa-solid fa-file-image"></i> ER Diagram</a>
                                 </div>
                             </div>
 
@@ -627,14 +631,13 @@
                                 <div class="absolute inset-0 bg-gradient-to-r from-galaxyGreen/0 via-galaxyGreen/5 to-galaxyGreen/0 opacity-0 group-hover/card:opacity-100 transition-opacity translate-x-[-100%] group-hover/card:translate-x-[100%] duration-1000"></div>
                                 <div class="flex justify-between items-start mb-2">
                                     <h4 class="text-xs font-bold text-white group-hover/card:text-galaxyGreen flex items-center gap-2">
-                                        <i class="fa-solid fa-code text-[10px]"></i> E-Commerce Frontend
+                                        <i class="fa-solid fa-code text-[10px]"></i> Web Development Assignment
                                     </h4>
-                                    <span class="text-[9px] text-galaxyGreen font-mono border border-galaxyGreen/30 px-1.5 py-0.5 rounded bg-galaxyGreen/10">COMPLETED</span>
+                                    <span class="text-[9px] text-galaxyGreen font-mono border border-galaxyGreen/30 px-1.5 py-0.5 rounded bg-galaxyGreen/10">MAY 2024</span>
                                 </div>
-                                <p class="text-[10px] text-gray-500 mb-3">Responsive web application built with modern JS frameworks and Tailwind CSS.</p>
+                                <p class="text-[10px] text-gray-500 mb-3">Built a responsive e‑commerce frontend using Tailwind CSS.</p>
                                 <div class="flex gap-2 relative z-10">
-                                    <a href="#" class="text-[9px] font-mono text-gray-400 hover:text-white bg-spaceBlack border border-gray-700 hover:border-galaxyGreen px-2 py-1 rounded transition-colors"><i class="fa-brands fa-github"></i> Repository</a>
-                                    <a href="#" class="text-[9px] font-mono text-gray-400 hover:text-white bg-spaceBlack border border-gray-700 hover:border-galaxyGreen px-2 py-1 rounded transition-colors"><i class="fa-solid fa-link"></i> Live Demo</a>
+                                    <a href="https://github.com/suensereypanha-maker/tailwind-shop-demo" target="_blank" class="text-[9px] font-mono text-gray-400 hover:text-white bg-spaceBlack border border-gray-700 hover:border-galaxyGreen px-2 py-1 rounded transition-colors"><i class="fa-brands fa-github"></i> Repository</a>
                                 </div>
                             </div>
                         </div>
@@ -651,17 +654,17 @@
                             <!-- Experience Item 1 -->
                             <div class="relative pl-7 group/item">
                                 <span class="absolute left-0 top-1 w-4 h-4 rounded-full bg-spaceBlack border border-galaxyGreen flex items-center justify-center shadow-[0_0_8px_#00FF66] group-hover/item:scale-110 transition-transform">
-                                    <span class="w-1.5 h-1.5 bg-galaxyGreen rounded-full animate-ping"></span>
+                                    <span class="w-1.5 h-1.5 bg-galaxyGreen rounded-full"></span>
                                 </span>
                                 <div class="flex justify-between items-start mb-1">
                                     <div>
-                                        <h4 class="text-sm font-bold text-white group-hover/item:text-galaxyGreen transition-colors">Software Engineer</h4>
-                                        <p class="text-[10px] text-gray-400 font-mono">Tech Innovations Inc.</p>
+                                        <h4 class="text-sm font-bold text-white group-hover/item:text-galaxyGreen transition-colors">Junior Web Developer</h4>
+                                        <p class="text-[10px] text-gray-400 font-mono">Tech Solutions Ltd.</p>
                                     </div>
-                                    <span class="px-2 py-0.5 bg-galaxyGreen/10 border border-galaxyGreen/30 text-galaxyGreen text-[9px] font-bold rounded font-mono">2024 - PRESENT</span>
+                                    <span class="px-2 py-0.5 bg-galaxyGreen/10 border border-galaxyGreen/30 text-galaxyGreen text-[9px] font-bold rounded font-mono">2023 - 2024</span>
                                 </div>
                                 <p class="text-[11px] text-gray-500 mt-2 leading-relaxed">
-                                    Developing high-performance web applications, integrating AI tools, and optimizing database clusters.
+                                    Developed and maintained client websites using Laravel and Vue.js.
                                 </p>
                             </div>
 
@@ -672,347 +675,383 @@
                                 </span>
                                 <div class="flex justify-between items-start mb-1">
                                     <div>
-                                        <h4 class="text-sm font-bold text-gray-300 group-hover/item:text-white transition-colors">Frontend Developer</h4>
-                                        <p class="text-[10px] text-gray-400 font-mono">Creative Digital Agency</p>
+                                        <h4 class="text-sm font-bold text-gray-300 group-hover/item:text-white transition-colors">Intern Software Engineer</h4>
+                                        <p class="text-[10px] text-gray-400 font-mono">Innovate Labs</p>
                                     </div>
-                                    <span class="px-2 py-0.5 bg-spaceBlack border border-gray-700 text-gray-500 text-[9px] font-bold rounded font-mono">2022 - 2024</span>
+                                    <span class="px-2 py-0.5 bg-spaceBlack border border-gray-700 text-gray-500 text-[9px] font-bold rounded font-mono">2022 - 2023</span>
                                 </div>
                                 <p class="text-[11px] text-gray-500 mt-2 leading-relaxed">
-                                    Built responsive interfaces using Vue.js and Tailwind CSS. Implemented complex animations and state management.
+                                    Assisted in building internal tools with Python and Docker.
                                 </p>
                             </div>
                         </div>
                     </section>
-                            <!-- COLUMN 2: LANGUAGES & CONTINUING LEARNING -->
-                            <div class="flex flex-col gap-6">
-                                <!-- 5. HUMAN LANGUAGES PANEL -->
-                                <section class="border border-galaxyGreen/20 bg-nebulaDark/60 backdrop-blur-md rounded-2xl p-5 shadow-neon-green">
-                                    <h2 class="text-sm font-bold text-white tracking-widest uppercase mb-4 flex items-center gap-2 border-b border-galaxyGreen/10 pb-2">
-                                        <i class="fa-solid fa-language text-galaxyGreen"></i> LANGUAGES
-                                    </h2>
-                                    <div class="space-y-3">
-                                        @foreach ($humanLanguages as $lang)
-                                        <div>
-                                            <div class="flex justify-between text-xs mb-1">
-                                                <span class="text-white">{{ $lang['name'] }}</span>
-                                                <span class="{{ $lang['active'] ? 'text-galaxyGreen' : 'text-gray-600' }} text-[10px] font-mono">{{ $lang['proficiency'] }}</span>
-                                            </div>
-                                            <div class="w-full bg-spaceBlack h-1.5 rounded border border-galaxyGreen/10">
-                                                <div class="{{ $lang['active'] ? 'bg-galaxyGreen shadow-[0_0_8px_#00FF66]' : 'bg-galaxyGreen/40' }} h-full rounded" style="width: {{ $lang['percentage'] }}%"></div>
-                                            </div>
-                                        </div>
-                                        @endforeach
-                                    </div>
-                                </section>
-
-                                <!-- 5.2. CONTINUOUS LEARNING PANEL -->
-                                <section class="border border-galaxyGreen/20 bg-nebulaDark/60 backdrop-blur-md rounded-2xl p-5 shadow-neon-green relative overflow-hidden group">
-                                    <!-- Glowing corner design -->
-                                    <div class="absolute -right-10 -top-10 w-28 h-28 bg-galaxyGreen/5 rounded-full blur-xl group-hover:bg-galaxyGreen/10 transition-all duration-500"></div>
-
-                                    <h2 class="text-sm font-bold text-white tracking-widest uppercase mb-4 flex items-center gap-2 border-b border-galaxyGreen/10 pb-2">
-                                        <i class="fa-solid fa-brain text-galaxyGreen animate-pulse"></i> CONTINUING LEARNING
-                                    </h2>
-
-                                    <div class="space-y-4">
-                                        <div class="flex justify-between items-center mb-1 gap-4">
-                                            <div class="w-[240px] min-w-[240px] h-5 flex items-center">
-                                                <h4 class="text-xs font-bold text-galaxyGreen typewriter-ai">AI Engineering & Big Data</h4>
-                                            </div>
-                                            <span class="px-2 py-0.5 bg-galaxyGreen/10 border border-galaxyGreen text-galaxyGreen text-[9px] font-bold rounded font-mono uppercase shrink-0">ACTIVE PURSUIT</span>
-                                        </div>
-                                        <p class="text-[10px] text-gray-500 leading-relaxed">
-                                            Specializing in Machine Learning models, Deep Learning algorithms, Python-based Data Pipelines, and Big Data architecture.
-                                        </p>
-
-                                        <div class="space-y-2 pt-2 border-t border-galaxyGreen/10">
-                                            <div>
-                                                <div class="flex justify-between text-[9px] mb-1">
-                                                    <span class="text-gray-400">Python & Machine Learning Foundations</span>
-                                                    <span class="text-galaxyGreen font-mono">75%</span>
-                                                </div>
-                                                <div class="w-full bg-spaceBlack h-1 rounded border border-galaxyGreen/10">
-                                                    <div class="bg-galaxyGreen shadow-[0_0_8px_#00FF66] h-full rounded" style="width: 75%"></div>
-                                                </div>
-                                            </div>
-                                            <div>
-                                                <div class="flex justify-between text-[9px] mb-1">
-                                                    <span class="text-gray-400">Deep Learning & Big Data Pipelines</span>
-                                                    <span class="text-galaxyGreen/60 font-mono">45%</span>
-                                                </div>
-                                                <div class="w-full bg-spaceBlack h-1 rounded border border-galaxyGreen/10">
-                                                    <div class="bg-galaxyGreen/40 h-full rounded" style="width: 45%"></div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </section>
-                            </div>
-                        </div>
-                        <!-- 6. PROGRAMMING LANGUAGES PANEL -->
-                        @php
-                        $skills = [
-                        [
-                        'name' => 'C / C++',
-                        'icons' => ['devicon-c-plain', 'devicon-cplusplus-plain'],
-                        'category' => 'SYSTEMS',
-                        'percentage' => 80,
-                        'type' => 'main',
-                        ],
-                        [
-                        'name' => 'C#',
-                        'icons' => ['devicon-csharp-plain'],
-                        'category' => 'SYSTEMS',
-                        'percentage' => 82,
-                        'type' => 'main',
-                        ],
-                        [
-                        'name' => 'HTML5',
-                        'icons' => ['devicon-html5-plain'],
-                        'category' => 'UI STRUCT',
-                        'percentage' => 95,
-                        'type' => 'frontend',
-                        ],
-                        [
-                        'name' => 'CSS3',
-                        'icons' => ['devicon-css3-plain'],
-                        'category' => 'UI STYLE',
-                        'percentage' => 90,
-                        'type' => 'frontend',
-                        ],
-                        [
-                        'name' => 'JavaScript',
-                        'icons' => ['devicon-javascript-plain'],
-                        'category' => 'SCRIPTING',
-                        'percentage' => 95,
-                        'type' => 'frontend',
-                        ],
-                        [
-                        'name' => 'Bootstrap',
-                        'icons' => ['devicon-bootstrap-plain'],
-                        'category' => 'UI KIT',
-                        'percentage' => 85,
-                        'type' => 'frontend',
-                        ],
-                        [
-                        'name' => 'Tailwind CSS',
-                        'icons' => ['devicon-tailwindcss-original'],
-                        'category' => 'UTILITY CSS',
-                        'percentage' => 95,
-                        'type' => 'frontend',
-                        ],
-                        [
-                        'name' => 'React JS',
-                        'icons' => ['devicon-react-original'],
-                        'category' => 'UI LIBRARY',
-                        'percentage' => 90,
-                        'type' => 'frontend',
-                        ],
-                        [
-                        'name' => 'PHP',
-                        'icons' => ['devicon-php-plain'],
-                        'category' => 'BACKEND',
-                        'percentage' => 88,
-                        'type' => 'backend',
-                        ],
-                        [
-                        'name' => 'Laravel',
-                        'icons' => ['devicon-laravel-original'],
-                        'category' => 'MVC FRAMEWORK',
-                        'percentage' => 92,
-                        'type' => 'backend',
-                        ],
-                        [
-                        'name' => 'Python',
-                        'icons' => ['devicon-python-plain'],
-                        'category' => 'SCRIPTING',
-                        'percentage' => 85,
-                        'type' => 'main backend',
-                        ],
-                        [
-                        'name' => 'Java',
-                        'icons' => ['devicon-java-plain'],
-                        'category' => 'ENTERPRISE',
-                        'percentage' => 75,
-                        'type' => 'main backend',
-                        ],
-                        [
-                        'name' => 'SQL',
-                        'icons' => ['fa-solid fa-database'],
-                        'category' => 'DATA QUERY',
-                        'percentage' => 88,
-                        'isFontAwesome' => true,
-                        'type' => 'database',
-                        ],
-                        [
-                        'name' => 'MySQL',
-                        'icons' => ['devicon-mysql-plain'],
-                        'category' => 'DATABASE',
-                        'percentage' => 90,
-                        'type' => 'database',
-                        ],
-                        [
-                        'name' => 'Oracle DB',
-                        'icons' => ['devicon-oracle-original'],
-                        'category' => 'ENTERPRISE',
-                        'percentage' => 80,
-                        'type' => 'database',
-                        ],
-                        [
-                        'name' => 'GitLab',
-                        'icons' => ['devicon-gitlab-plain'],
-                        'category' => 'DEVOPS',
-                        'percentage' => 85,
-                        'type' => 'other',
-                        ],
-                        ];
-                        @endphp
+                    <!-- COLUMN 2: LANGUAGES & CONTINUING LEARNING -->
+                    <div class="flex flex-col gap-6">
+                        <!-- 5. HUMAN LANGUAGES PANEL -->
                         <section class="border border-galaxyGreen/20 bg-nebulaDark/60 backdrop-blur-md rounded-2xl p-5 shadow-neon-green">
                             <h2 class="text-sm font-bold text-white tracking-widest uppercase mb-4 flex items-center gap-2 border-b border-galaxyGreen/10 pb-2">
-                                <i class="fa-solid fa-code text-galaxyGreen"></i> PROGRAMMING LANGUAGES & ARCHITECTURES
+                                <i class="fa-solid fa-language text-galaxyGreen"></i> LANGUAGES
                             </h2>
-
-                            <!-- Filter Tabs -->
-                            <div class="flex flex-wrap gap-2 mb-6 text-[10px] font-mono tracking-wider">
-                                <button onclick="filterSkills('all')" data-tab="all" class="skill-tab px-3 py-1 border border-galaxyGreen bg-galaxyGreen/15 text-white rounded transition-all duration-300">
-                                    ALL
-                                </button>
-                                <button onclick="filterSkills('main')" data-tab="main" class="skill-tab px-3 py-1 border border-galaxyGreen/20 bg-galaxyGreen/5 text-gray-400 rounded hover:border-galaxyGreen/40 hover:text-white transition-all duration-300">
-                                    MAIN
-                                </button>
-                                <button onclick="filterSkills('frontend')" data-tab="frontend" class="skill-tab px-3 py-1 border border-galaxyGreen/20 bg-galaxyGreen/5 text-gray-400 rounded hover:border-galaxyGreen/40 hover:text-white transition-all duration-300">
-                                    FRONTEND
-                                </button>
-                                <button onclick="filterSkills('backend')" data-tab="backend" class="skill-tab px-3 py-1 border border-galaxyGreen/20 bg-galaxyGreen/5 text-gray-400 rounded hover:border-galaxyGreen/40 hover:text-white transition-all duration-300">
-                                    BACKEND
-                                </button>
-                                <button onclick="filterSkills('database')" data-tab="database" class="skill-tab px-3 py-1 border border-galaxyGreen/20 bg-galaxyGreen/5 text-gray-400 rounded hover:border-galaxyGreen/40 hover:text-white transition-all duration-300">
-                                    DATABASE
-                                </button>
-                                <button onclick="filterSkills('other')" data-tab="other" class="skill-tab px-3 py-1 border border-galaxyGreen/20 bg-galaxyGreen/5 text-gray-400 rounded hover:border-galaxyGreen/40 hover:text-white transition-all duration-300">
-                                    OTHER
-                                </button>
-                            </div>
-
-                            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-                                @foreach ($skills as $skill)
-                                <div class="skill-card group p-3 bg-spaceBlack/40 backdrop-blur-sm border border-galaxyGreen/15 hover:border-galaxyGreen/50 rounded-xl flex items-center justify-between gap-4 transition-all duration-300 hover:shadow-neon-green transform hover:-translate-y-0.5" data-category="{{ $skill['type'] }}">
-                                    <!-- Left: Icons & Name -->
-                                    <div class="flex items-center gap-3">
-                                        <div class="flex gap-1.5 justify-center {{ isset($skill['isFontAwesome']) ? 'text-sky-400' : '' }} group-hover:scale-105 transition-transform duration-300">
-                                            @foreach ($skill['icons'] as $icon)
-                                            <i class="{{ $icon }} colored text-2xl"></i>
-                                            @endforeach
-                                        </div>
-                                        <span class="text-xs font-bold text-white tracking-wide">{{ $skill['name'] }}</span>
+                            <div class="space-y-3">
+                                @foreach ($humanLanguages as $lang)
+                                <div>
+                                    <div class="flex justify-between text-xs mb-1">
+                                        <span class="text-white">{{ $lang['name'] }}</span>
+                                        <span class="{{ $lang['active'] ? 'text-galaxyGreen' : 'text-gray-600' }} text-[10px] font-mono">{{ $lang['proficiency'] }}</span>
                                     </div>
-
-                                    <!-- Right: Category Badge & Progress Track -->
-                                    <div class="flex items-center gap-4 flex-1 justify-end max-w-[280px]">
-                                        <div class="hidden sm:block">
-                                            <span class="text-[9px] font-mono tracking-widest px-2.5 py-0.5 rounded-full border 
-                                            {{ ($skill['category'] === 'SYSTEMS' || $skill['category'] === 'DATA QUERY' || $skill['category'] === 'DATABASE' || $skill['category'] === 'ENTERPRISE') 
-                                                ? 'text-premiumGold bg-premiumGold/10 border-premiumGold/25' 
-                                                : 'text-galaxyGreen bg-galaxyGreen/10 border-galaxyGreen/25' }}">
-                                                {{ $skill['category'] }}
-                                            </span>
-                                        </div>
-
-                                        <!-- Progress Track -->
-                                        <div class="w-24 sm:w-32">
-                                            <div class="flex justify-between items-center text-[8px] mb-0.5 font-mono">
-                                                <span class="text-gray-500">PRO</span>
-                                                <span class="text-galaxyGreen font-bold group-hover:text-premiumGold transition-colors">{{ $skill['percentage'] }}%</span>
-                                            </div>
-                                            <div class="w-full bg-spaceBlack h-1 rounded-full overflow-hidden border border-galaxyGreen/10">
-                                                <div class="bg-galaxyGreen h-full rounded-full shadow-[0_0_8px_#00FF66] transition-all duration-500 group-hover:bg-premiumGold group-hover:shadow-[0_0_8px_#E6A15C]" style="width: {{ $skill['percentage'] }}%"></div>
-                                            </div>
-                                        </div>
+                                    <div class="w-full bg-spaceBlack h-1.5 rounded border border-galaxyGreen/10">
+                                        <div class="{{ $lang['active'] ? 'bg-galaxyGreen shadow-[0_0_8px_#00FF66]' : 'bg-galaxyGreen/40' }} h-full rounded" style="width: {{ $lang['percentage'] }}%"></div>
                                     </div>
                                 </div>
                                 @endforeach
                             </div>
                         </section>
 
+                        <!-- 5.2. CONTINUOUS LEARNING PANEL -->
+                        <section class="border border-galaxyGreen/20 bg-nebulaDark/60 backdrop-blur-md rounded-2xl p-5 shadow-neon-green relative overflow-hidden group">
+                            <!-- Glowing corner design -->
+                            <div class="absolute -right-10 -top-10 w-28 h-28 bg-galaxyGreen/5 rounded-full blur-xl group-hover:bg-galaxyGreen/10 transition-all duration-500"></div>
+
+                            <h2 class="text-sm font-bold text-white tracking-widest uppercase mb-4 flex items-center gap-2 border-b border-galaxyGreen/10 pb-2">
+                                <i class="fa-solid fa-brain text-galaxyGreen animate-pulse"></i> CONTINUING LEARNING
+                            </h2>
+
+                            <div class="space-y-4">
+                                <div class="flex justify-between items-center mb-1 gap-4">
+                                    <div class="w-[240px] min-w-[240px] h-5 flex items-center">
+                                        <h4 class="text-xs font-bold text-galaxyGreen typewriter-ai">AI Engineering & Big Data</h4>
+                                    </div>
+                                    <span class="px-2 py-0.5 bg-galaxyGreen/10 border border-galaxyGreen text-galaxyGreen text-[9px] font-bold rounded font-mono uppercase shrink-0">ACTIVE PURSUIT</span>
+                                </div>
+                                <p class="text-[10px] text-gray-500 leading-relaxed">
+                                    Specializing in Machine Learning models, Deep Learning algorithms, Python-based Data Pipelines, and Big Data architecture.
+                                </p>
+
+                                <div class="space-y-2 pt-2 border-t border-galaxyGreen/10">
+                                    <div>
+                                        <div class="flex justify-between text-[9px] mb-1">
+                                            <span class="text-gray-400">Python & Machine Learning Foundations</span>
+                                            <span class="text-galaxyGreen font-mono">75%</span>
+                                        </div>
+                                        <div class="w-full bg-spaceBlack h-1 rounded border border-galaxyGreen/10">
+                                            <div class="bg-galaxyGreen shadow-[0_0_8px_#00FF66] h-full rounded" style="width: 75%"></div>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div class="flex justify-between text-[9px] mb-1">
+                                            <span class="text-gray-400">Deep Learning & Big Data Pipelines</span>
+                                            <span class="text-galaxyGreen/60 font-mono">45%</span>
+                                        </div>
+                                        <div class="w-full bg-spaceBlack h-1 rounded border border-galaxyGreen/10">
+                                            <div class="bg-galaxyGreen/40 h-full rounded" style="width: 45%"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
                 </div>
+                <!-- 6. PROGRAMMING LANGUAGES PANEL -->
+                @php
+                $skills = [
+                [
+                'name' => 'C / C++',
+                'icons' => ['devicon-c-plain', 'devicon-cplusplus-plain'],
+                'category' => 'SYSTEMS',
+                'percentage' => 80,
+                'type' => 'main',
+                ],
+                [
+                'name' => 'C#',
+                'icons' => ['devicon-csharp-plain'],
+                'category' => 'SYSTEMS',
+                'percentage' => 82,
+                'type' => 'main',
+                ],
+                [
+                'name' => 'HTML5',
+                'icons' => ['devicon-html5-plain'],
+                'category' => 'UI STRUCT',
+                'percentage' => 95,
+                'type' => 'frontend',
+                ],
+                [
+                'name' => 'CSS3',
+                'icons' => ['devicon-css3-plain'],
+                'category' => 'UI STYLE',
+                'percentage' => 90,
+                'type' => 'frontend',
+                ],
+                [
+                'name' => 'JavaScript',
+                'icons' => ['devicon-javascript-plain'],
+                'category' => 'SCRIPTING',
+                'percentage' => 95,
+                'type' => 'frontend',
+                ],
+                [
+                'name' => 'Bootstrap',
+                'icons' => ['devicon-bootstrap-plain'],
+                'category' => 'UI KIT',
+                'percentage' => 85,
+                'type' => 'frontend',
+                ],
+                [
+                'name' => 'Tailwind CSS',
+                'icons' => ['devicon-tailwindcss-original'],
+                'category' => 'UTILITY CSS',
+                'percentage' => 95,
+                'type' => 'frontend',
+                ],
+                [
+                'name' => 'React JS',
+                'icons' => ['devicon-react-original'],
+                'category' => 'UI LIBRARY',
+                'percentage' => 90,
+                'type' => 'frontend',
+                ],
+                [
+                'name' => 'PHP',
+                'icons' => ['devicon-php-plain'],
+                'category' => 'BACKEND',
+                'percentage' => 88,
+                'type' => 'backend',
+                ],
+                [
+                'name' => 'Laravel',
+                'icons' => ['devicon-laravel-original'],
+                'category' => 'MVC FRAMEWORK',
+                'percentage' => 92,
+                'type' => 'backend',
+                ],
+                [
+                'name' => 'Python',
+                'icons' => ['devicon-python-plain'],
+                'category' => 'SCRIPTING',
+                'percentage' => 85,
+                'type' => 'main backend',
+                ],
+                [
+                'name' => 'Java',
+                'icons' => ['devicon-java-plain'],
+                'category' => 'ENTERPRISE',
+                'percentage' => 75,
+                'type' => 'main backend',
+                ],
+                [
+                'name' => 'SQL',
+                'icons' => ['fa-solid fa-database'],
+                'category' => 'DATA QUERY',
+                'percentage' => 88,
+                'isFontAwesome' => true,
+                'type' => 'database',
+                ],
+                [
+                'name' => 'MySQL',
+                'icons' => ['devicon-mysql-plain'],
+                'category' => 'DATABASE',
+                'percentage' => 90,
+                'type' => 'database',
+                ],
+                [
+                'name' => 'Oracle DB',
+                'icons' => ['devicon-oracle-original'],
+                'category' => 'ENTERPRISE',
+                'percentage' => 80,
+                'type' => 'database',
+                ],
+                [
+                'name' => 'GitLab',
+                'icons' => ['devicon-gitlab-plain'],
+                'category' => 'DEVOPS',
+                'percentage' => 85,
+                'type' => 'other',
+                ],
+                [
+                'name' => 'Vue.js',
+                'icons' => ['devicon-vuejs-plain'],
+                'category' => 'UI FRAMEWORK',
+                'percentage' => 88,
+                'type' => 'frontend',
+                ],
+                [
+                'name' => 'Docker',
+                'icons' => ['devicon-docker-plain'],
+                'category' => 'DEVOPS',
+                'percentage' => 80,
+                'type' => 'other',
+                ],
+                ];
+                @endphp
+
+                <!-- GITHUB CONTRIBUTION MONITOR PANEL -->
+                <section class="border border-galaxyGreen/20 bg-nebulaDark/60 backdrop-blur-md rounded-2xl p-5 shadow-neon-green relative overflow-hidden group">
+                    <div class="absolute -right-10 -top-10 w-28 h-28 bg-galaxyGreen/5 rounded-full blur-xl group-hover:bg-galaxyGreen/10 transition-all duration-500"></div>
+                    <h2 class="text-sm font-bold text-white tracking-widest uppercase mb-4 flex items-center gap-2 border-b border-galaxyGreen/10 pb-2">
+                        <i class="fa-brands fa-github text-galaxyGreen animate-pulse"></i> GITHUB COMMIT MATRIX
+                    </h2>
+                    <div class="w-full overflow-x-auto py-2">
+                        <div class="min-w-[700px] flex justify-center">
+                            <img src="https://ghchart.rshah.org/00ff66/suensereypanha-maker"
+                                alt="suensereypanha-maker Github Contributions"
+                                class="github-dark-calendar w-full max-w-[800px] select-none" />
+                        </div>
+                    </div>
+                    <div class="mt-3 flex justify-between items-center text-[10px] font-mono text-gray-500">
+                        <span>SYSTEM: MON-FRI MATRIX CONNECTED</span>
+                        <a href="https://github.com/suensereypanha-maker" target="_blank" class="text-galaxyGreen hover:text-white transition-colors flex items-center gap-1">
+                            VIEW PROFILE <i class="fa-solid fa-arrow-up-right-from-square text-[8px]"></i>
+                        </a>
+                    </div>
+                </section>
+
+                <section class="border border-galaxyGreen/20 bg-nebulaDark/60 backdrop-blur-md rounded-2xl p-5 shadow-neon-green">
+                    <h2 class="text-sm font-bold text-white tracking-widest uppercase mb-4 flex items-center gap-2 border-b border-galaxyGreen/10 pb-2">
+                        <i class="fa-solid fa-code text-galaxyGreen"></i> PROGRAMMING LANGUAGES & ARCHITECTURES
+                    </h2>
+
+                    <!-- Filter Tabs -->
+                    <div class="flex flex-wrap gap-2 mb-6 text-[10px] font-mono tracking-wider">
+                        <button onclick="filterSkills('all')" data-tab="all" class="skill-tab px-3 py-1 border border-galaxyGreen bg-galaxyGreen/15 text-white rounded transition-all duration-300">
+                            ALL
+                        </button>
+                        <button onclick="filterSkills('main')" data-tab="main" class="skill-tab px-3 py-1 border border-galaxyGreen/20 bg-galaxyGreen/5 text-gray-400 rounded hover:border-galaxyGreen/40 hover:text-white transition-all duration-300">
+                            MAIN
+                        </button>
+                        <button onclick="filterSkills('frontend')" data-tab="frontend" class="skill-tab px-3 py-1 border border-galaxyGreen/20 bg-galaxyGreen/5 text-gray-400 rounded hover:border-galaxyGreen/40 hover:text-white transition-all duration-300">
+                            FRONTEND
+                        </button>
+                        <button onclick="filterSkills('backend')" data-tab="backend" class="skill-tab px-3 py-1 border border-galaxyGreen/20 bg-galaxyGreen/5 text-gray-400 rounded hover:border-galaxyGreen/40 hover:text-white transition-all duration-300">
+                            BACKEND
+                        </button>
+                        <button onclick="filterSkills('database')" data-tab="database" class="skill-tab px-3 py-1 border border-galaxyGreen/20 bg-galaxyGreen/5 text-gray-400 rounded hover:border-galaxyGreen/40 hover:text-white transition-all duration-300">
+                            DATABASE
+                        </button>
+                        <button onclick="filterSkills('other')" data-tab="other" class="skill-tab px-3 py-1 border border-galaxyGreen/20 bg-galaxyGreen/5 text-gray-400 rounded hover:border-galaxyGreen/40 hover:text-white transition-all duration-300">
+                            OTHER
+                        </button>
+                    </div>
+
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                        @foreach ($skills as $skill)
+                        <div class="skill-card group p-3 bg-spaceBlack/40 backdrop-blur-sm border border-galaxyGreen/15 hover:border-galaxyGreen/50 rounded-xl flex items-center justify-between gap-4 transition-all duration-300 hover:shadow-neon-green transform hover:-translate-y-0.5" data-category="{{ $skill['type'] }}">
+                            <!-- Left: Icons & Name -->
+                            <div class="flex items-center gap-3">
+                                <div class="flex gap-1.5 justify-center {{ isset($skill['isFontAwesome']) ? 'text-sky-400' : '' }} group-hover:scale-105 transition-transform duration-300">
+                                    @foreach ($skill['icons'] as $icon)
+                                    <i class="{{ $icon }} colored text-2xl"></i>
+                                    @endforeach
+                                </div>
+                                <span class="text-xs font-bold text-white tracking-wide">{{ $skill['name'] }}</span>
+                            </div>
+
+                            <!-- Right: Category Badge & Progress Track -->
+                            <div class="flex items-center gap-4 flex-1 justify-end max-w-[280px]">
+                                <div class="hidden sm:block">
+                                    <span class="text-[9px] font-mono tracking-widest px-2.5 py-0.5 rounded-full border 
+                                            {{ ($skill['category'] === 'SYSTEMS' || $skill['category'] === 'DATA QUERY' || $skill['category'] === 'DATABASE' || $skill['category'] === 'ENTERPRISE') 
+                                                ? 'text-premiumGold bg-premiumGold/10 border-premiumGold/25' 
+                                                : 'text-galaxyGreen bg-galaxyGreen/10 border-galaxyGreen/25' }}">
+                                        {{ $skill['category'] }}
+                                    </span>
+                                </div>
+
+                                <!-- Progress Track -->
+                                <div class="w-24 sm:w-32">
+                                    <div class="flex justify-between items-center text-[8px] mb-0.5 font-mono">
+                                        <span class="text-gray-500">PRO</span>
+                                        <span class="text-galaxyGreen font-bold group-hover:text-premiumGold transition-colors">{{ $skill['percentage'] }}%</span>
+                                    </div>
+                                    <div class="w-full bg-spaceBlack h-1 rounded-full overflow-hidden border border-galaxyGreen/10">
+                                        <div class="bg-galaxyGreen h-full rounded-full shadow-[0_0_8px_#00FF66] transition-all duration-500 group-hover:bg-premiumGold group-hover:shadow-[0_0_8px_#E6A15C]" style="width: {{ $skill['percentage'] }}%"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        @endforeach
+                    </div>
+                </section>
+
             </div>
-
-            <!-- ================= BOTTOM DATA TERMINAL FOOTER ================= -->
-            <footer class="mt-8 border-t border-galaxyGreen/10 pt-4 text-center text-[10px] text-gray-600 tracking-[0.2em] uppercase">
-                COSMOS TERMINAL HUB SECURE LOGPOINT // SPECULATION BLOCK CONFIRMED © 2026
-            </footer>
         </div>
 
-        <script>
-            // Dynamic Terminal telemetry emulation
-            setInterval(() => {
-                const sysTemp = document.getElementById('sys-temp');
-                const ramUse = document.getElementById('ram-use');
-                if (sysTemp) {
-                    const temp = (38 + Math.random() * 8).toFixed(1);
-                    sysTemp.textContent = `${temp}°C`;
-                }
-                if (ramUse) {
-                    const ram = (4.8 + Math.random() * 1.5).toFixed(1);
-                    ramUse.textContent = `${ram} GB`;
-                }
-            }, 3000);
+        <!-- ================= BOTTOM DATA TERMINAL FOOTER ================= -->
+        <footer class="mt-8 border-t border-galaxyGreen/10 pt-4 text-center text-[10px] text-gray-600 tracking-[0.2em] uppercase">
+            COSMOS TERMINAL HUB SECURE LOGPOINT // SPECULATION BLOCK CONFIRMED © 2026
+        </footer>
+    </div>
 
-            // Skills category filtering logic
-            function filterSkills(category) {
-                // Update tab button styles
-                const tabs = document.querySelectorAll('.skill-tab');
-                tabs.forEach(tab => {
-                    if (tab.getAttribute('data-tab') === category) {
-                        tab.classList.remove('border-galaxyGreen/20', 'bg-galaxyGreen/5', 'text-gray-400');
-                        tab.classList.add('border-galaxyGreen', 'bg-galaxyGreen/15', 'text-white');
-                    } else {
-                        tab.classList.add('border-galaxyGreen/20', 'bg-galaxyGreen/5', 'text-gray-400');
-                        tab.classList.remove('border-galaxyGreen', 'bg-galaxyGreen/15', 'text-white');
-                    }
-                });
-
-                // Filter skill cards
-                const cards = document.querySelectorAll('.skill-card');
-                cards.forEach(card => {
-                    const categories = card.getAttribute('data-category').split(' ');
-                    if (category === 'all' || categories.includes(category)) {
-                        card.style.display = 'flex';
-                        setTimeout(() => {
-                            card.style.opacity = '1';
-                            card.style.transform = 'scale(1)';
-                        }, 50);
-                    } else {
-                        card.style.opacity = '0';
-                        card.style.transform = 'scale(0.95)';
-                        setTimeout(() => {
-                            card.style.display = 'none';
-                        }, 200);
-                    }
-                });
+    <script>
+        // Dynamic Terminal telemetry emulation
+        setInterval(() => {
+            const sysTemp = document.getElementById('sys-temp');
+            const ramUse = document.getElementById('ram-use');
+            if (sysTemp) {
+                const temp = (38 + Math.random() * 8).toFixed(1);
+                sysTemp.textContent = `${temp}°C`;
             }
-        </script>
-        <!-- Floating Cyber Contact Dock -->
-        <div class="fixed bottom-6 right-6 z-50 flex flex-col gap-3">
-            <!-- Telegram Floating Button -->
-            <a href="https://t.me/MrPanha001" target="_blank" rel="noopener noreferrer" class="group relative flex items-center justify-center w-12 h-12 bg-nebulaDark/90 border border-galaxyGreen/40 hover:border-galaxyGreen rounded-full text-galaxyGreen text-xl shadow-neon-green hover:shadow-[0_0_15px_#00FF66] hover:scale-110 transition-all duration-300">
-                <div class="absolute inset-0 rounded-full border border-galaxyGreen/30 animate-ripple pointer-events-none group-hover:hidden"></div>
-                <i class="fa-brands fa-telegram group-hover:rotate-12 transition-transform"></i>
-                <!-- Tooltip -->
-                <span class="absolute right-14 px-2.5 py-1 bg-spaceBlack/95 border border-galaxyGreen/30 text-galaxyGreen text-[10px] font-mono tracking-wider rounded opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none whitespace-nowrap shadow-neon-green">
-                    TELEGRAM // @MrPanha001
-                </span>
-            </a>
+            if (ramUse) {
+                const ram = (4.8 + Math.random() * 1.5).toFixed(1);
+                ramUse.textContent = `${ram} GB`;
+            }
+        }, 3000);
 
-            <!-- Email Floating Button -->
-            <a href="mailto:suensereypanha@gmail.com" class="group relative flex items-center justify-center w-12 h-12 bg-nebulaDark/90 border border-galaxyGreen/40 hover:border-galaxyGreen rounded-full text-galaxyGreen text-xl shadow-neon-green hover:shadow-[0_0_15px_#00FF66] hover:scale-110 transition-all duration-300">
-                <i class="fa-solid fa-envelope group-hover:rotate-12 transition-transform"></i>
-                <!-- Tooltip -->
-                <span class="absolute right-14 px-2.5 py-1 bg-spaceBlack/95 border border-galaxyGreen/30 text-galaxyGreen text-[10px] font-mono tracking-wider rounded opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none whitespace-nowrap shadow-neon-green">
-                    EMAIL // suensereypanha@gmail.com
-                </span>
-            </a>
-        </div>
+        // Skills category filtering logic
+        function filterSkills(category) {
+            // Update tab button styles
+            const tabs = document.querySelectorAll('.skill-tab');
+            tabs.forEach(tab => {
+                if (tab.getAttribute('data-tab') === category) {
+                    tab.classList.remove('border-galaxyGreen/20', 'bg-galaxyGreen/5', 'text-gray-400');
+                    tab.classList.add('border-galaxyGreen', 'bg-galaxyGreen/15', 'text-white');
+                } else {
+                    tab.classList.add('border-galaxyGreen/20', 'bg-galaxyGreen/5', 'text-gray-400');
+                    tab.classList.remove('border-galaxyGreen', 'bg-galaxyGreen/15', 'text-white');
+                }
+            });
+
+            // Filter skill cards
+            const cards = document.querySelectorAll('.skill-card');
+            cards.forEach(card => {
+                const categories = card.getAttribute('data-category').split(' ');
+                if (category === 'all' || categories.includes(category)) {
+                    card.style.display = 'flex';
+                    setTimeout(() => {
+                        card.style.opacity = '1';
+                        card.style.transform = 'scale(1)';
+                    }, 50);
+                } else {
+                    card.style.opacity = '0';
+                    card.style.transform = 'scale(0.95)';
+                    setTimeout(() => {
+                        card.style.display = 'none';
+                    }, 200);
+                }
+            });
+        }
+    </script>
+    <!-- Floating Cyber Contact Dock -->
+    <div class="fixed bottom-6 right-6 z-50 flex flex-col gap-3">
+        <!-- Telegram Floating Button -->
+        <a href="https://t.me/MrPanha001" target="_blank" rel="noopener noreferrer" class="group relative flex items-center justify-center w-12 h-12 bg-nebulaDark/90 border border-galaxyGreen/40 hover:border-galaxyGreen rounded-full text-galaxyGreen text-xl shadow-neon-green hover:shadow-[0_0_15px_#00FF66] hover:scale-110 transition-all duration-300">
+            <div class="absolute inset-0 rounded-full border border-galaxyGreen/30 animate-ripple pointer-events-none group-hover:hidden"></div>
+            <i class="fa-brands fa-telegram group-hover:rotate-12 transition-transform"></i>
+            <!-- Tooltip -->
+            <span class="absolute right-14 px-2.5 py-1 bg-spaceBlack/95 border border-galaxyGreen/30 text-galaxyGreen text-[10px] font-mono tracking-wider rounded opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none whitespace-nowrap shadow-neon-green">
+                TELEGRAM // @MrPanha001
+            </span>
+        </a>
+
+        <!-- Email Floating Button -->
+        <a href="mailto:suensereypanha@gmail.com" class="group relative flex items-center justify-center w-12 h-12 bg-nebulaDark/90 border border-galaxyGreen/40 hover:border-galaxyGreen rounded-full text-galaxyGreen text-xl shadow-neon-green hover:shadow-[0_0_15px_#00FF66] hover:scale-110 transition-all duration-300">
+            <i class="fa-solid fa-envelope group-hover:rotate-12 transition-transform"></i>
+            <!-- Tooltip -->
+            <span class="absolute right-14 px-2.5 py-1 bg-spaceBlack/95 border border-galaxyGreen/30 text-galaxyGreen text-[10px] font-mono tracking-wider rounded opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none whitespace-nowrap shadow-neon-green">
+                EMAIL // suensereypanha@gmail.com
+            </span>
+        </a>
+    </div>
 </body>
 
 </html>
