@@ -664,7 +664,7 @@
                                     <span class="px-2 py-0.5 bg-galaxyGreen/10 border border-galaxyGreen/30 text-galaxyGreen text-[9px] font-bold rounded font-mono">2023 - 2024</span>
                                 </div>
                                 <p class="text-[11px] text-gray-500 mt-2 leading-relaxed">
-                                    Developed and maintained client websites using Laravel.
+                                    Developed and maintained client websites using Laravel and Vue.js.
                                 </p>
                             </div>
 
