@@ -681,7 +681,7 @@
                                     <span class="px-2 py-0.5 bg-spaceBlack border border-gray-700 text-gray-500 text-[9px] font-bold rounded font-mono">2022 - 2023</span>
                                 </div>
                                 <p class="text-[11px] text-gray-500 mt-2 leading-relaxed">
-                                    Assisted in building internal tools with Python and Docker.
+                                    Assisted in building internal tools with Python.
                                 </p>
                             </div>
                         </div>
@@ -867,21 +867,7 @@
                 'category' => 'DEVOPS',
                 'percentage' => 85,
                 'type' => 'other',
-                ],
-                [
-                'name' => 'Vue.js',
-                'icons' => ['devicon-vuejs-plain'],
-                'category' => 'UI FRAMEWORK',
-                'percentage' => 88,
-                'type' => 'frontend',
-                ],
-                [
-                'name' => 'Docker',
-                'icons' => ['devicon-docker-plain'],
-                'category' => 'DEVOPS',
-                'percentage' => 80,
-                'type' => 'other',
-                ],
+                ]
                 ];
                 @endphp
 
